@@ -1,4 +1,4 @@
-INSERT INTO Descriptions (Name)
+INSERT INTO Descriptions (DescriptionName)
 VALUES ('Alat'),
 ('Baterije'),
 ('Benzin'),
