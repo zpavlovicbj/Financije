@@ -1,0 +1,12 @@
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\bin\Debug\netcoreapp3.1\Financije.Service.deps.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\bin\Debug\netcoreapp3.1\Financije.Service.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\bin\Debug\netcoreapp3.1\Financije.Service.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\bin\Debug\netcoreapp3.1\Financije.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\bin\Debug\netcoreapp3.1\Financije.Core.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.csprojAssemblyReference.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.AssemblyInfoInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.AssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.csproj.CoreCompileInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.csproj.CopyComplete
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Service\obj\Debug\netcoreapp3.1\Financije.Service.pdb

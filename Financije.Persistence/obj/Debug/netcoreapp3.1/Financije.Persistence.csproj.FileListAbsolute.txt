@@ -1,0 +1,15 @@
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Persistence.deps.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Persistence.runtimeconfig.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Persistence.runtimeconfig.dev.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Persistence.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Persistence.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\bin\Debug\netcoreapp3.1\Financije.Core.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.csprojAssemblyReference.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.AssemblyInfoInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.AssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.csproj.CoreCompileInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.csproj.CopyComplete
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Persistence\obj\Debug\netcoreapp3.1\Financije.Persistence.genruntimeconfig.cache

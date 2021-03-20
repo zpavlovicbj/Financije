@@ -1,0 +1,54 @@
+﻿@model Financije.Presentation.Models.Financije.StoreViewModel;
+
+<div class="card" style="width: 500px;">
+    <div class="card-header bg-primary text-uppercase text-white" >
+        <h4>Pregled primatelja / platitelja</h4>
+    </div>
+    <div class="card-body">
+        <form enctype="multipart/form-data" asp-controller="Financije" asp-action="CreateStore" method="post">
+            <div class="row">
+                <label asp-for="StoreName" class="control-label"></label>
+            </div>
+            <div class="row">
+                
+                    <div class="input-group">
+                        <input asp-for="StoreName" class="form-control" />
+                        <span asp-validation-for="StoreName" class="text-danger"></span>
+                        <div class="input-group-append">
+                            <input type="submit" value="Dodaj" class="btn btn-primary" style="width:90px" />
+                        </div>
+                    </div>
+                
+            </div>
+        </form>
+
+        <table class="table table-sm table-striped col-md-10">
+            <thead>
+                <tr>
+                    <th>Platitelj/Primatelj </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var store in Model.StoreList)
+                {
+                    <tr class="mb-0">
+                        <td hidden>@store.StoresId</td>
+                        <td>@store.StoreName</td>
+
+                        <td>
+                            <a asp-action="DetailsStore" asp-controller="Financije" asp-route-Id="@store.StoresId"
+                               class="btn btn-sm btn-info">Uredi</a>
+                        </td>
+                        <td>
+                            <a asp-action="DeleteStore" asp-controller="Financije" asp-route-Id="@store.StoresId"
+                               onclick="return confirm('Are you sure you want to delete?');"
+                               class="btn btn-sm btn-danger">Obriši</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

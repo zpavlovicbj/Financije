@@ -1,0 +1,50 @@
+modelBuilder.Entity<Accounts>()
+                .HasKey(a => new { a.StoreId, a.DescriptionId });
+            
+            modelBuilder.Entity<Accounts>()
+                .HasOne(p => p.Stores)
+                .WithMany(b => b.Accounts)
+                .HasForeignKey(p => p.StoreId);
+
+            modelBuilder.Entity<Accounts>()
+                .HasOne(p => p.Description)
+                .WithMany(b => b.Accounts)
+                .HasForeignKey(p => p.DescriptionId);
+
+            modelBuilder.Entity<Accounts>()
+                .Property(p => p.Payin)
+                .HasDefaultValue(0);
+
+            modelBuilder.Entity<Accounts>()
+                .Property(p => p.Payout)
+                .HasDefaultValue(0);
+
+
+            modelBuilder.Entity<Articles>()
+                .HasKey(a => new { a.DescriptionId });
+
+            modelBuilder.Entity<Articles>()
+                .HasOne(p => p.Descriptions)
+                .WithMany(b => b.Articles)
+                .HasForeignKey(p => p.DescriptionId);
+
+            modelBuilder.Entity<AccountItems>()
+                .HasKey(a => new { a.AccountId, a.ArticleId });
+
+            modelBuilder.Entity<AccountItems>()
+                .HasOne(p => p.Accounts)
+                .WithMany(b => b.AccountItems)
+                .HasForeignKey(p => p.AccountId);
+
+            modelBuilder.Entity<AccountItems>()
+                .HasOne(p => p.Articles)
+                .WithMany(b => b.AccountItems)
+                .HasForeignKey(p => p.ArticleId);
+
+            modelBuilder.Entity<AccountItems>()
+                .Property(p => p.Payin)
+                .HasDefaultValue(0);
+
+            modelBuilder.Entity<AccountItems>()
+                .Property(p => p.Payin)
+                .HasDefaultValue(0);

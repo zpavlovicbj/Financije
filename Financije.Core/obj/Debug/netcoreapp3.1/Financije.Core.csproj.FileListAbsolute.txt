@@ -1,0 +1,9 @@
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\bin\Debug\netcoreapp3.1\Financije.Core.deps.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\bin\Debug\netcoreapp3.1\Financije.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\bin\Debug\netcoreapp3.1\Financije.Core.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.csprojAssemblyReference.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.AssemblyInfoInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.AssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.csproj.CoreCompileInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.pdb
