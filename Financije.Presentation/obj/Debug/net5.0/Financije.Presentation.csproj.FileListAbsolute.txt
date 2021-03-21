@@ -320,3 +320,5 @@ C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Fin
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\ref\Financije.Presentation.dll
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.pdb
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.genruntimeconfig.cache
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\DescriptionView.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\PartialDescriptionView.cshtml.g.cs

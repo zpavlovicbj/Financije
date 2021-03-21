@@ -12,5 +12,11 @@ namespace Financije.Presentation.Models.Financije
         public string StoreName { get; set; }
 
         public List<StorePreviewModel> StoreList { get; set; }
+
+        public Page<StorePreviewModel> Page { get; set; }
+
+        public int PageCount { get; set; }
+
+        public List<int> ListPageSize { get; set; }
     }
 }

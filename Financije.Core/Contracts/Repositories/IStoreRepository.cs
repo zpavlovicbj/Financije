@@ -1,7 +1,5 @@
 ﻿using Financije.Core.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Financije.Core.Contracts.Repositories
 {
@@ -9,9 +7,11 @@ namespace Financije.Core.Contracts.Repositories
     {
         List<Stores> GetAll();
 
+        (List<Stores> items, int count) GetPaginatedResult(int page, int size);
+
         Stores GetById(int id);
 
-        Stores GetByMane(string name);
+        Stores GetByNane(string name);
 
         int Count();
 

@@ -14,7 +14,8 @@ namespace Financije.Presentation.AutoMapper
         public FinancijeProfiles()
         {
             CreateMap<Stores, StorePreviewModel>().ReverseMap();
-            
+
+            CreateMap<Descriptions, DescriptionPreviewModel>().ReverseMap();
         }
     }
 }

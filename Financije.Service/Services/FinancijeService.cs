@@ -10,31 +10,84 @@ namespace Financije.Service.Services
     public class FinancijeService : IFinancijeService
     {
         private readonly IStoreRepository _storeRepository;
+        private readonly IDescriptionsRepository _descriptionsRepository;
 
-        public FinancijeService(IStoreRepository storeRepository)
+        public FinancijeService(IStoreRepository storeRepository, IDescriptionsRepository descriptionsRepository)
         {
             _storeRepository = storeRepository;
+            _descriptionsRepository = descriptionsRepository;
         }
 
-        public void Add(string storeName)
+        public void AddDescription(string descriptionName)
+        {
+            var description = new Descriptions();
+            description.DescriptionName = descriptionName;
+            _descriptionsRepository.Add(description);
+        }
+
+        public void AddStore(string storeName)
         {
             var store = new Stores();
             store.StoreName = storeName;
             _storeRepository.Add(store);
-
         }
 
-        public int Count()
+        public int CountDescriptions()
+        {
+            return _descriptionsRepository.Count();
+        }
+
+        public int CountStores()
         {
             return _storeRepository.Count();
         }
 
-        public List<Stores> GetAll()
+        public List<Descriptions> GetAllDescriptions()
+        {
+            return _descriptionsRepository.GetAll();
+        }
+
+        public List<Stores> GetAllStores()
         {
             return _storeRepository.GetAll();
         }
 
-        public void Remove(int id)
+        public Descriptions GetDescriptionById(int id)
+        {
+            return _descriptionsRepository.GetById(id);
+        }
+
+        public Descriptions GetDescriptionByName(string name)
+        {
+            return _descriptionsRepository.GetByMane(name);
+        }
+
+        public (List<Descriptions> items, int count) GetPaginatedResultDescriptions(int page, int size)
+        {
+           return _descriptionsRepository.GetPaginatedResult(page, size);
+        }
+
+        public (List<Stores> items, int count) GetPaginatedResultStores(int page, int size)
+        {
+            return _storeRepository.GetPaginatedResult(page, size);
+        }
+
+        public Stores GetStoreById(int id)
+        {
+            return _storeRepository.GetById(id);
+        }
+
+        public Stores GetStoreByName(string name)
+        {
+            return _storeRepository.GetByNane(name);
+        }
+
+        public void RemoveDescription(int id)
+        {
+            _descriptionsRepository.Remove(id);
+        }
+
+        public void RemoveStore(int id)
         {
             _storeRepository.Remove(id);
         }
