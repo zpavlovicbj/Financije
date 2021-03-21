@@ -1,0 +1,146 @@
+﻿@model Financije.Presentation.Models.Financije.DescriptionViewModel;
+
+<div class="container mt-2 border page-header" style="width: 500px;">
+    <h4 class="bg-primary text-uppercase text-white p-2">Pregled primatelja / platitelja</h4>
+
+    <form enctype="multipart/form-data" asp-controller="Financije" asp-action="CreateDescription" method="post">
+        <div class="row">
+            <div class="text-danger  ml-2">
+                @if (ViewBag.Greska != null)
+                {
+                    @ViewBag.Greska
+                }
+            </div>
+        </div>
+        <div class="row">
+            <label asp-for="DescriptionName" class="control-label ml-2"></label>
+        </div>
+        <div class="row">
+            <div class="input-group ml-2">
+                <input asp-for="DescriptionName" class="form-control" />
+                <span asp-validation-for="DescriptionName" class="text-danger"></span>
+                <div class="input-group-append">
+                    <input type="submit" value="Dodaj" class="btn btn-primary" style="width:90px" />
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <hr class="mt-2 mb-2" />
+    <table class="table table-sm table-striped table-bordered col-md-12">
+        <thead>
+            <tr>
+                <th>Platitelj/Primatelj </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var description in Model.Page.Items)
+            {
+                <tr class="mb-0" style="width: 70%">
+                    <td hidden>@description.DescriptionId</td>
+                    <td>@description.DescriptionName</td>
+                    <td style="width: 15%">
+                        <input type="submit" value="Uredi" class="btn btn-sm btn-primary" id="Details"/>
+                    </td>
+                    <td style="width: 15%">
+                        <a asp-action="DeleteDescription" asp-controller="Financije" asp-route-Id="@description.DescriptionId"
+                           onclick="return confirm('Are you sure you want to delete?');"
+                           class="btn btn-sm btn-danger">Obriši</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form asp-action="ViewStorePagination">
+        <div class="row">
+            <div class="col-md-6 ml-2">
+                <label>Ukupno: @Model.Page.Total</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ml-2">
+                <div class="form-group">
+                    @if (Model.Page.HasFirst)
+                    {
+                        <a asp-action="ViewDetailsPagination" asp-controller="Financije"
+                           asp-route-botun="1" asp-route-pagenum="@Model.Page.CurrentPage"
+                           class="btn btn-info" style="width:48px" id="first">&#60&#60</a>
+                    }
+                    else
+                    {
+                        <button disabled class="btn btn-info" style="width:48px">&#60&#60</button>
+                    }
+
+                    @if (Model.Page.HasPrevious)
+                    {
+                        <a asp-action="ViewDetailsPagination" asp-controller="Financije"
+                           asp-route-botun="2" asp-route-pagenum="@Model.Page.CurrentPage"
+                           class="btn btn-info" style="width:48px">&#60</a>
+                    }
+                    else
+                    {
+                        <button disabled class="btn btn-info" style="width:48px">&#60</button>
+                    }
+
+                    @if (Model.Page.HasNext)
+                    {
+                        <a asp-action="ViewDetailsPagination" asp-controller="Financije"
+                           asp-route-botun="3" asp-route-pagenum="@Model.Page.CurrentPage"
+                           class="btn btn-info" style="width:48px">&#62</a>
+                    }
+                    else
+                    {
+                        <button disabled class="btn btn-info" style="width:48px">&#62</button>
+                    }
+
+                    @if (Model.Page.HasLast)
+                    {
+                        <a asp-action="ViewDetailsPagination" asp-controller="Financije"
+                           asp-route-botun="4" asp-route-pagenum="@Model.Page.TotalPages"
+                           class="btn btn-info" style="width:48px">&#62&#62</a>
+                    }
+                    else
+                    {
+                        <button disabled class="btn btn-info" style="width:48px">&#62&#62</button>
+                    }
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-inline float-right mr-2">
+                    <div class="form-group">
+                        <select asp-for="PageCount" asp-items="@(new SelectList(Model.ListPageSize, "PageSizeModel"))"
+                                class="form-control mr-2" style="width:70px">
+                        </select>
+                        <label>po stranici</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ml-2">
+                <label>Stranica @Model.Page.CurrentPage od @Model.Page.TotalPages</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Details").click(function () {
+                alert("OK");
+            })
+        })
+
+        
+
+    </script>
+
+
+
+        
+}
