@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Financije.Service/1.0.0": {
+        "dependencies": {
+          "Financije.Core": "1.0.0"
+        },
+        "runtime": {
+          "Financije.Service.dll": {}
+        }
+      },
+      "Financije.Core/1.0.0": {
+        "runtime": {
+          "Financije.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Financije.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Financije.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
