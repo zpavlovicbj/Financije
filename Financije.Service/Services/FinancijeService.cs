@@ -42,6 +42,11 @@ namespace Financije.Service.Services
             return _storeRepository.Count();
         }
 
+        public void EditDescription()
+        {
+            _storeRepository.Edit();
+        }
+
         public List<Descriptions> GetAllDescriptions()
         {
             return _descriptionsRepository.GetAll();

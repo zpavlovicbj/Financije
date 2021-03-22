@@ -1582,7 +1582,7 @@
       },
       "Financije.Persistence/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Financije.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.4",
@@ -1598,7 +1598,7 @@
       },
       "Financije.Service/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Financije.Core": "1.0.0"
         },
@@ -5588,19 +5588,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zoki\\.nuget\\packages\\": {}
+    "D:\\Users\\zpavlovic1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Presentation\\Financije.Presentation.csproj",
+      "projectUniqueName": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Presentation\\Financije.Presentation.csproj",
       "projectName": "Financije.Presentation",
-      "projectPath": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Presentation\\Financije.Presentation.csproj",
-      "packagesPath": "C:\\Users\\Zoki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Presentation\\obj\\",
+      "projectPath": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Presentation\\Financije.Presentation.csproj",
+      "packagesPath": "D:\\Users\\zpavlovic1\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\zpavlovic1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5614,11 +5614,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Persistence\\Financije.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Persistence\\Financije.Persistence.csproj"
+            "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Persistence\\Financije.Persistence.csproj": {
+              "projectPath": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Persistence\\Financije.Persistence.csproj"
             },
-            "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Service\\Financije.Service.csproj": {
-              "projectPath": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Service\\Financije.Service.csproj"
+            "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Service\\Financije.Service.csproj": {
+              "projectPath": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Service\\Financije.Service.csproj"
             }
           }
         }
@@ -5692,7 +5692,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

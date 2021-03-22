@@ -17,7 +17,7 @@ namespace Financije.Persistence
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(FinancijeContext).Assembly);
 
             modelBuilder.Entity<Accounts>()
-                .HasKey(a => new { a.StoreId, a.DescriptionId });
+                .HasKey(a => new { a.AccountsId });
 
             modelBuilder.Entity<Accounts>()
                 .HasOne(p => p.Store)
@@ -39,7 +39,7 @@ namespace Financije.Persistence
 
 
             modelBuilder.Entity<Articles>()
-                .HasKey(a => new { a.DescriptionId });
+                .HasKey(a => new {a.Id});
 
             modelBuilder.Entity<Articles>()
                 .HasOne(p => p.Description)

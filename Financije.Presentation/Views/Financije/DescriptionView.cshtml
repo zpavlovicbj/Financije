@@ -1,6 +1,6 @@
 ﻿@model Financije.Presentation.Models.Financije.DescriptionViewModel;
 
-<div class="container mt-2 border page-header" style="width: 500px;">
+<div class="container mt-2 page-header" style="width: 500px;">
     <h4 class="bg-primary text-uppercase text-white p-2">Pregled primatelja / platitelja</h4>
 
     <form enctype="multipart/form-data" asp-controller="Financije" asp-action="CreateDescription" method="post">
@@ -42,7 +42,9 @@
                     <td hidden>@description.DescriptionId</td>
                     <td>@description.DescriptionName</td>
                     <td style="width: 15%">
-                        <input type="submit" value="Uredi" class="btn btn-sm btn-primary" id="Details"/>
+                        @*<input type="submit" value="Uredi" class="btn btn-sm btn-primary" id="Details" />*@
+                        <a asp-action="DescriptionEdit" asp-controller="Financije" asp-route-Id="@description.DescriptionId" 
+                         asp-route-currentPage="@Model.Page.CurrentPage"  class="btn btn-sm btn-primary">Uredi</a>
                     </td>
                     <td style="width: 15%">
                         <a asp-action="DeleteDescription" asp-controller="Financije" asp-route-Id="@description.DescriptionId"
@@ -132,15 +134,38 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#Details").click(function () {
-                alert("OK");
+                const id = $(this).data("id");
+                alert(id);
             })
         })
 
-        
+
 
     </script>
 
-
-
-        
 }
+@*
+    $("#certificateDatatable").on("click", "a.view-certificate", function () {
+                    const id = $(this).data("id");
+
+                    $.ajax({
+                        type: "GET",
+                        url: "../api/CertificateApi/GetCertificateDetails",
+                        data: { 'Id': id },
+                        dataType: 'JSON',
+                        success: function (response) {
+                            $("#CertId").val(response.data.id);
+                            $("#IssuedTo").val(response.data.issuedTo);
+                            $("#ValidTo").val(response.data.validTo);
+                            $("#DN").val(response.data.dn);
+                            $("#Thumbprint").val(response.data.thumbprint);
+                            $("#SerialNumber").val(response.data.serialNumber);
+
+                            $('#myModal').modal('show')
+                        },
+                        error: function () {
+                            alert("Došlo je do greške!");
+                        },
+                    });
+                })
+*@

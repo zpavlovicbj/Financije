@@ -47,21 +47,20 @@ namespace Financije.Persistence.Migrations
 
             modelBuilder.Entity("Financije.Core.Entities.Accounts", b =>
                 {
-                    b.Property<int>("StoreId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("DescriptionId")
-                        .HasColumnType("int");
+                    b.Property<int>("AccountsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("AccountNumber")
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<int>("AccountsId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("DescriptionId")
+                        .HasColumnType("int");
 
                     b.Property<byte>("Month")
                         .HasColumnType("tinyint");
@@ -76,27 +75,36 @@ namespace Financije.Persistence.Migrations
                         .HasColumnType("float")
                         .HasDefaultValue(0.0);
 
-                    b.HasKey("StoreId", "DescriptionId");
+                    b.Property<int>("StoreId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AccountsId");
 
                     b.HasIndex("DescriptionId");
+
+                    b.HasIndex("StoreId");
 
                     b.ToTable("Accounts");
                 });
 
             modelBuilder.Entity("Financije.Core.Entities.Articles", b =>
                 {
-                    b.Property<int>("DescriptionId")
-                        .HasColumnType("int");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ArticleName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("Id")
+                    b.Property<int>("DescriptionId")
                         .HasColumnType("int");
 
-                    b.HasKey("DescriptionId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("DescriptionId");
 
                     b.ToTable("Articles");
                 });

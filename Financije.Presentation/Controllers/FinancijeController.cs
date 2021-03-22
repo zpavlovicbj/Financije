@@ -94,9 +94,13 @@ namespace Financije.Presentation.Controllers
         }
 
 
-        public IActionResult DescriptionView()
+        public IActionResult DescriptionView(int pageNumber)
         {
-            return View(DescriptionForView(1));
+            if(pageNumber == 0)
+            {
+                pageNumber = 1;
+            }
+            return View(DescriptionForView(pageNumber));
         }
 
         [HttpGet]
@@ -159,6 +163,32 @@ namespace Financije.Presentation.Controllers
         public IActionResult DeleteDescription(int Id)
         {
             _financijeService.RemoveDescription(Id);
+            return View("DescriptionView", DescriptionForView(1));
+        }
+
+        [HttpGet]
+        public IActionResult DescriptionEdit(int Id, int currentPage)
+        {
+            var description = _financijeService.GetDescriptionById(Id);
+
+            DescriptionPreviewModel descriptionPVM = _mapper.Map<DescriptionPreviewModel>(description);
+            descriptionPVM.CurrentPage = currentPage;
+
+            return View("DescriptionEditView", descriptionPVM);
+        }
+
+        [HttpPost]
+        public IActionResult DescriptionEdit(DescriptionPreviewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var description = _financijeService.GetDescriptionById(model.DescriptionId);
+                description.DescriptionName = model.DescriptionName;
+                _financijeService.EditDescription();
+
+                return View("DescriptionView", DescriptionForView(model.CurrentPage));
+            }
+
             return View("DescriptionView", DescriptionForView(1));
         }
 

@@ -22,6 +22,8 @@ namespace Financije.Core.Contracts.Services
 
         Descriptions GetDescriptionById(int id);
 
+        void EditDescription();
+
 
         List<Stores> GetAllStores();
 
