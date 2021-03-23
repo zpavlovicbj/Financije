@@ -13,8 +13,6 @@ namespace Financije.Presentation.Models.Financije
 
         public List<DescriptionPreviewModel> DescriptionList { get; set; }
 
-        public Page<DescriptionPreviewModel> Page { get; set; }
-
         public int PageCount { get; set; }
 
         public List<int> ListPageSize { get; set; }

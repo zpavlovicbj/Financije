@@ -1,8 +1,9 @@
 ﻿using Financije.Core.Contracts.Repositories;
+using Financije.Core.Contracts.Repositories.Models;
 using Financije.Core.Entities;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Dynamic.Core;
 
 namespace Financije.Persistence.Repositories
 {
@@ -46,7 +47,7 @@ namespace Financije.Persistence.Repositories
             return _context.Stores.SingleOrDefault(c => c.StoreName == name);
         }
 
-        public (List<Stores> items, int count) GetPaginatedResult(int page, int size)
+        /*public (List<Stores> items, int count) GetPaginatedResult(int page, int size)
         {
             var query = _context.Stores.AsSingleQuery().OrderBy(o => o.StoreName);
 
@@ -55,6 +56,30 @@ namespace Financije.Persistence.Repositories
             var items = query.Skip(page).Take(size).ToList();
 
             return (items, count);
+        }*/
+
+        public PagedRResult<Stores> GetPaginatedResult(PagedRQuery request)
+        {
+            IQueryable<Stores> query = _context.Stores;
+
+            if (!(string.IsNullOrEmpty(request.Columns.FirstOrDefault().Name) && string.IsNullOrEmpty(request.Order.FirstOrDefault().Dir)))
+            {
+                query = query.OrderBy(request.Columns.FirstOrDefault().Name + " " + request.Order.FirstOrDefault().Dir);
+            }
+            if (!string.IsNullOrEmpty(request.Search.Value))
+            {
+                query = query.Where(m => m.StoreName.ToLower().Contains(request.Search.Value.ToLower()));
+            }
+
+            int recordsTotal = query.Count();
+
+            var data = query.Skip(request.Start).Take(request.Length).ToList();
+
+            return new PagedRResult<Stores>
+            {
+                Count = recordsTotal,
+                Items = data
+            };
         }
 
         public void Remove(int id)

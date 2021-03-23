@@ -27,44 +27,10 @@ namespace Financije.Presentation.Controllers
         public IActionResult StoreView()
         {
 
-            return View(StoreForView(1));
+            //return View(StoreForView(1));
+            return View();
         }
-
-        [HttpGet]
-        public IActionResult ViewStorePagination(int pagenum, int botun)
-        {
-            switch (botun)
-            {
-                case 1:
-                    pagenum = 1;
-                    break;
-                case 2:
-                    pagenum--;
-                    break;
-                case 3:
-                    pagenum++;
-                    break;
-            };
-
-            return View("StoreView", StoreForView(pagenum));
-        }
-
-        public StoreViewModel StoreForView(int pageNumber)
-        {
-            int startRecord = recPerPage * (pageNumber - 1);
-            var (items, count) = _financijeService.GetPaginatedResultStores(startRecord, recPerPage);
-
-            StoreViewModel storeVM = new StoreViewModel();
-
-            storeVM.StoreList = _mapper.Map<List<StorePreviewModel>>(items);
-            
-            storeVM.ListPageSize = PageCountList();
-            storeVM.Page = new Page<StorePreviewModel>(storeVM.StoreList, count, pageNumber, recPerPage);
-            storeVM.PageCount = recPerPage;
-
-            return storeVM;
-        }
-
+        /*
         [HttpPost]
         public IActionResult CreateStore(StoreViewModel model)
         {
@@ -85,44 +51,22 @@ namespace Financije.Presentation.Controllers
 
             return View("StoreView", StoreForView(1));
         }
-
+        */
+        /*
         [HttpGet]
         public IActionResult DeleteStore(int Id)
         {
             _financijeService.RemoveStore(Id);
             return View("StoreView", StoreForView(1));
-        }
+        }*/
 
 
-        public IActionResult DescriptionView(int pageNumber)
+        public IActionResult DescriptionView()
         {
-            if(pageNumber == 0)
-            {
-                pageNumber = 1;
-            }
-            return View(DescriptionForView(pageNumber));
+            return View();
         }
 
-        [HttpGet]
-        public IActionResult ViewDetailsPagination(int pagenum, int botun)
-        {
-            switch (botun)
-            {
-                case 1:
-                    pagenum = 1;
-                    break;
-                case 2:
-                    pagenum--;
-                    break;
-                case 3:
-                    pagenum++;
-                    break;
-            };
-
-            return View("DescriptionView", DescriptionForView(pagenum));
-        }
-
-        public DescriptionViewModel DescriptionForView(int pageNumber)
+        /*public DescriptionViewModel DescriptionForView(int pageNumber)
         {
             int startRecord = recPerPage * (pageNumber - 1);
             var (items, count) = _financijeService.GetPaginatedResultDescriptions(startRecord, recPerPage);
@@ -136,8 +80,8 @@ namespace Financije.Presentation.Controllers
             descriptionVM.PageCount = recPerPage;
 
             return descriptionVM;
-        }
-
+        }*/
+        
         [HttpPost]
         public IActionResult CreateDescription(DescriptionViewModel model)
         {
@@ -147,7 +91,7 @@ namespace Financije.Presentation.Controllers
                 if(exsist == null)
                 {
                     _financijeService.AddDescription(model.DescriptionName);
-                    return View("DescriptionView", DescriptionForView(1));
+                    //return View("DescriptionView", DescriptionForView(1));
                 }
                 else
                 {
@@ -156,10 +100,10 @@ namespace Financije.Presentation.Controllers
                 
             }
 
-            return View("DescriptionView", DescriptionForView(1));
+            return View("DescriptionView");
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public IActionResult DeleteDescription(int Id)
         {
             _financijeService.RemoveDescription(Id);
@@ -190,16 +134,6 @@ namespace Financije.Presentation.Controllers
             }
 
             return View("DescriptionView", DescriptionForView(1));
-        }
-
-        public List<int> PageCountList()
-        {
-            var tempList = new List<int>();
-            tempList.Add(5);
-            tempList.Add(10);
-            tempList.Add(15);
-            tempList.Add(20);
-            return tempList;
-        }
+        }*/
     }
 }

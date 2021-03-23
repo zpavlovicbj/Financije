@@ -1,4 +1,5 @@
-﻿using Financije.Core.Entities;
+﻿using Financije.Core.Contracts.Repositories.Models;
+using Financije.Core.Entities;
 using System.Collections.Generic;
 
 namespace Financije.Core.Contracts.Repositories
@@ -7,7 +8,9 @@ namespace Financije.Core.Contracts.Repositories
     {
         List<Stores> GetAll();
 
-        (List<Stores> items, int count) GetPaginatedResult(int page, int size);
+        PagedRResult<Stores> GetPaginatedResult(PagedRQuery request);
+
+        //(List<Stores> items, int count) GetPaginatedResult(int page, int size);
 
         Stores GetById(int id);
 

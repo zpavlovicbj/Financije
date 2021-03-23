@@ -35,7 +35,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var store in Model.Page.Items)
+            @foreach (var store in Model.StoreList)
             {
                 <tr class="mb-0" style="width: 85%">
                     <td hidden>@store.StoresId</td>
@@ -49,79 +49,6 @@
             }
         </tbody>
     </table>
-
-    <form asp-action="ViewStorePagination">
-        <div class="row">
-            <div class="col-md-6 ml-2">
-                <label>Ukupno: @Model.Page.Total</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 ml-2">
-                <div class="form-group">
-                    @if (Model.Page.HasFirst)
-                    {
-                        <a asp-action="ViewStorePagination" asp-controller="Financije"
-                           asp-route-botun="1" asp-route-pagenum="@Model.Page.CurrentPage"
-                           class="btn btn-info" style="width:48px" id="first">&#60&#60</a>
-                    }
-                    else
-                    {
-                        <button disabled class="btn btn-info" style="width:48px">&#60&#60</button>
-                    }
-
-                    @if (Model.Page.HasPrevious)
-                    {
-                        <a asp-action="ViewStorePagination" asp-controller="Financije"
-                           asp-route-botun="2" asp-route-pagenum="@Model.Page.CurrentPage"
-                           class="btn btn-info" style="width:48px">&#60</a>
-                    }
-                    else
-                    {
-                        <button disabled class="btn btn-info" style="width:48px">&#60</button>
-                    }
-
-                    @if (Model.Page.HasNext)
-                    {
-                        <a asp-action="ViewStorePagination" asp-controller="Financije"
-                           asp-route-botun="3" asp-route-pagenum="@Model.Page.CurrentPage"
-                           class="btn btn-info" style="width:48px">&#62</a>
-                    }
-                    else
-                    {
-                        <button disabled class="btn btn-info" style="width:48px">&#62</button>
-                    }
-
-                    @if (Model.Page.HasLast)
-                    {
-                        <a asp-action="ViewStorePagination" asp-controller="Financije"
-                           asp-route-botun="4" asp-route-pagenum="@Model.Page.TotalPages"
-                           class="btn btn-info" style="width:48px">&#62&#62</a>
-                    }
-                    else
-                    {
-                        <button disabled class="btn btn-info" style="width:48px">&#62&#62</button>
-                    }
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-inline float-right mr-2">
-                    <div class="form-group">
-                        <select asp-for="PageCount" asp-items="@(new SelectList(Model.ListPageSize, "PageSizeModel"))"
-                                class="form-control mr-2" style="width:70px">
-                        </select>
-                        <label>po stranici</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 ml-2">
-                <label>Stranica @Model.Page.CurrentPage od @Model.Page.TotalPages</label>
-            </div>
-        </div>
-    </form>
-</div>
 
 <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">

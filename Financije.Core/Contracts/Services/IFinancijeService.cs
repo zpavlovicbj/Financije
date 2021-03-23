@@ -1,4 +1,5 @@
 ﻿using Financije.Core.Contracts.Repositories;
+using Financije.Core.Contracts.Repositories.Models;
 using Financije.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Financije.Core.Contracts.Services
     {
         List<Descriptions> GetAllDescriptions();
 
-        (List<Descriptions> items, int count) GetPaginatedResultDescriptions(int page, int size);
+        PagedRResult<Descriptions> SearchDescriptions(PagedRQuery query);
 
         int CountDescriptions();
 
@@ -27,7 +28,7 @@ namespace Financije.Core.Contracts.Services
 
         List<Stores> GetAllStores();
 
-        (List<Stores> items, int count) GetPaginatedResultStores(int page, int size);
+        PagedRResult<Stores> SearchStores(PagedRQuery query);
 
         int CountStores();
 

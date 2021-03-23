@@ -1,1 +1,26 @@
 ﻿
+<div class="card">
+    <div class="card-header bg-primary text-uppercase text-white">
+        <h4>Opis - promijena</h4>
+    </div>
+    <form enctype="multipart/form-data" asp-controller="Financije" asp-action="DescriptionEdit" method="post">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Izdan za:</label>
+                        <input type="text" id="DescriptionName" class="form-control">
+                        <input type="text" id="DescriptionId" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="submit" value="Spremi" class="btn btn-primary" style="width:90px" />
+                    <a asp-action="DescriptionView" asp-controller="Financije"
+                       class="btn btn-danger">Odustani</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,4 +1,5 @@
 ﻿using Financije.Core.Contracts.Repositories;
+using Financije.Core.Contracts.Repositories.Models;
 using Financije.Core.Contracts.Services;
 using Financije.Core.Entities;
 using System;
@@ -69,13 +70,23 @@ namespace Financije.Service.Services
 
         public (List<Descriptions> items, int count) GetPaginatedResultDescriptions(int page, int size)
         {
+            throw new NotImplementedException();
+        }
+
+        public (List<Stores> items, int count) GetPaginatedResultStores(int page, int size)
+        {
+            throw new NotImplementedException();
+        }
+
+        /*public (List<Descriptions> items, int count) GetPaginatedResultDescriptions(int page, int size)
+        {
            return _descriptionsRepository.GetPaginatedResult(page, size);
         }
 
         public (List<Stores> items, int count) GetPaginatedResultStores(int page, int size)
         {
             return _storeRepository.GetPaginatedResult(page, size);
-        }
+        }*/
 
         public Stores GetStoreById(int id)
         {
@@ -95,6 +106,16 @@ namespace Financije.Service.Services
         public void RemoveStore(int id)
         {
             _storeRepository.Remove(id);
+        }
+
+        public PagedRResult<Descriptions> SearchDescriptions(PagedRQuery query)
+        {
+            return _descriptionsRepository.GetPaginatedResult(query);
+        }
+
+        public PagedRResult<Stores> SearchStores(PagedRQuery query)
+        {
+            return _storeRepository.GetPaginatedResult(query);
         }
     }
 }

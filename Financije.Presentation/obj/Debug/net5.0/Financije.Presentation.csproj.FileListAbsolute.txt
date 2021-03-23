@@ -325,3 +325,4 @@ C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Raz
 D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\DescriptionView.cshtml.g.cs
 D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\PartialDescriptionView.cshtml.g.cs
 D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\DescriptionEditView.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\libman.json
