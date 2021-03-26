@@ -15,3 +15,4 @@ C:\Users\Zoki\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Fina
 C:\Users\Zoki\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.dll
 C:\Users\Zoki\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.pdb
 C:\Users\Zoki\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.csprojAssemblyReference.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Core\obj\Debug\netcoreapp3.1\Financije.Core.csprojAssemblyReference.cache

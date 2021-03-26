@@ -10,11 +10,9 @@ namespace Financije.Core.Contracts.Repositories
 
         PagedRResult<Descriptions> GetPaginatedResult(PagedRQuery request);
 
-        //(List<Descriptions> items, int count) GetPaginatedResult(int page, int size);
-
         Descriptions GetById(int id);
 
-        Descriptions GetByMane(string name);
+        Descriptions GetByNane(string name);
 
         int Count();
 

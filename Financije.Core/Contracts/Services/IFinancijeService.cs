@@ -9,7 +9,21 @@ namespace Financije.Core.Contracts.Services
 {
     public interface IFinancijeService
     {
-        List<Descriptions> GetAllDescriptions();
+        List<Articles> GetAllArticles();
+
+        PagedRResult<Articles> SearchArticles(PagedRQuery query);
+
+        int CountArticles();
+
+        void RemoveArticles(int id);
+
+        void AddArticles(string descriptionName);
+
+        Articles GetArticlesByName(string name);
+
+        Articles GetArticlesById(int id);
+
+        void EditArticle();
 
         PagedRResult<Descriptions> SearchDescriptions(PagedRQuery query);
 
@@ -25,9 +39,6 @@ namespace Financije.Core.Contracts.Services
 
         void EditDescription();
 
-
-        List<Stores> GetAllStores();
-
         PagedRResult<Stores> SearchStores(PagedRQuery query);
 
         int CountStores();
@@ -39,5 +50,7 @@ namespace Financije.Core.Contracts.Services
         Stores GetStoreByName(string name);
 
         Stores GetStoreById(int id);
+
+        void EditStore();
     }
 }

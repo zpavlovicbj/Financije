@@ -35,6 +35,7 @@ namespace Financije.Presentation
                 opt.UseSqlServer(Configuration.GetConnectionString("Financije"));
             });
 
+            services.AddScoped<IArticleRepository, ArticleRepository>();
             services.AddScoped<IDescriptionsRepository, DescriptionsRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<IFinancijeService, FinancijeService>();

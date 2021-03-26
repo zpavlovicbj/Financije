@@ -42,21 +42,11 @@ namespace Financije.Persistence.Repositories
             return _context.Descriptions.SingleOrDefault(d => d.DescriptionId == id);
         }
 
-        public Descriptions GetByMane(string name)
+        public Descriptions GetByNane(string name)
         {
             return _context.Descriptions.SingleOrDefault(d => d.DescriptionName == name);
         }
 
-        /*public (List<Descriptions> items, int count) GetPaginatedResult(int page, int size)
-        {
-            var query = _context.Descriptions.AsSingleQuery().OrderBy(o => o.DescriptionName);
-
-            int count = query.Count();
-
-            var items = query.Skip(page).Take(size).ToList();
-
-            return (items, count);
-        }*/
 
         public PagedRResult<Descriptions> GetPaginatedResult(PagedRQuery request)
         {

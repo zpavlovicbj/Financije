@@ -5,6 +5,7 @@ namespace Financije.Presentation.Models.Financije
 {
     public class DescriptionViewModel
     {
+        [Display(Name = "Id")]
         public int DescriptionId { get; set; }
 
         [Required(ErrorMessage = "Potrebno je unesti naziv.")]
@@ -13,8 +14,5 @@ namespace Financije.Presentation.Models.Financije
 
         public List<DescriptionPreviewModel> DescriptionList { get; set; }
 
-        public int PageCount { get; set; }
-
-        public List<int> ListPageSize { get; set; }
     }
 }

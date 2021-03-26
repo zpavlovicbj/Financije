@@ -10,13 +10,24 @@ namespace Financije.Service.Services
 {
     public class FinancijeService : IFinancijeService
     {
-        private readonly IStoreRepository _storeRepository;
+        private readonly IArticleRepository _articleRepository;
         private readonly IDescriptionsRepository _descriptionsRepository;
+        private readonly IStoreRepository _storeRepository;
 
-        public FinancijeService(IStoreRepository storeRepository, IDescriptionsRepository descriptionsRepository)
+        public FinancijeService(IArticleRepository articleRepository,
+                                IDescriptionsRepository descriptionsRepository, 
+                                IStoreRepository storeRepository)
         {
-            _storeRepository = storeRepository;
+            _articleRepository = articleRepository;
             _descriptionsRepository = descriptionsRepository;
+            _storeRepository = storeRepository;
+        }
+
+        public void AddArticles(string articleName)
+        {
+            var article = new Articles();
+            article.ArticleName = articleName;
+            _articleRepository.Add(article);
         }
 
         public void AddDescription(string descriptionName)
@@ -33,6 +44,11 @@ namespace Financije.Service.Services
             _storeRepository.Add(store);
         }
 
+        public int CountArticles()
+        {
+            return _articleRepository.Count();
+        }
+
         public int CountDescriptions()
         {
             return _descriptionsRepository.Count();
@@ -43,9 +59,24 @@ namespace Financije.Service.Services
             return _storeRepository.Count();
         }
 
+        public void EditArticle()
+        {
+            _articleRepository.Edit();
+        }
+
         public void EditDescription()
         {
             _storeRepository.Edit();
+        }
+
+        public void EditStore()
+        {
+            _storeRepository.Edit();
+        }
+
+        public List<Articles> GetAllArticles()
+        {
+            return _articleRepository.GetAll();
         }
 
         public List<Descriptions> GetAllDescriptions()
@@ -58,6 +89,16 @@ namespace Financije.Service.Services
             return _storeRepository.GetAll();
         }
 
+        public Articles GetArticlesById(int id)
+        {
+            return _articleRepository.GetById(id);
+        }
+
+        public Articles GetArticlesByName(string name)
+        {
+            return _articleRepository.GetByNane(name);
+        }
+
         public Descriptions GetDescriptionById(int id)
         {
             return _descriptionsRepository.GetById(id);
@@ -65,28 +106,8 @@ namespace Financije.Service.Services
 
         public Descriptions GetDescriptionByName(string name)
         {
-            return _descriptionsRepository.GetByMane(name);
+            return _descriptionsRepository.GetByNane(name);
         }
-
-        public (List<Descriptions> items, int count) GetPaginatedResultDescriptions(int page, int size)
-        {
-            throw new NotImplementedException();
-        }
-
-        public (List<Stores> items, int count) GetPaginatedResultStores(int page, int size)
-        {
-            throw new NotImplementedException();
-        }
-
-        /*public (List<Descriptions> items, int count) GetPaginatedResultDescriptions(int page, int size)
-        {
-           return _descriptionsRepository.GetPaginatedResult(page, size);
-        }
-
-        public (List<Stores> items, int count) GetPaginatedResultStores(int page, int size)
-        {
-            return _storeRepository.GetPaginatedResult(page, size);
-        }*/
 
         public Stores GetStoreById(int id)
         {
@@ -98,6 +119,11 @@ namespace Financije.Service.Services
             return _storeRepository.GetByNane(name);
         }
 
+        public void RemoveArticles(int id)
+        {
+            _articleRepository.Remove(id);
+        }
+
         public void RemoveDescription(int id)
         {
             _descriptionsRepository.Remove(id);
@@ -106,6 +132,11 @@ namespace Financije.Service.Services
         public void RemoveStore(int id)
         {
             _storeRepository.Remove(id);
+        }
+
+        public PagedRResult<Articles> SearchArticles(PagedRQuery query)
+        {
+            return _articleRepository.GetPaginatedResult(query);
         }
 
         public PagedRResult<Descriptions> SearchDescriptions(PagedRQuery query)

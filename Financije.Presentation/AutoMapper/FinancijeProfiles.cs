@@ -13,7 +13,13 @@ namespace Financije.Presentation.AutoMapper
 
         public FinancijeProfiles()
         {
-            CreateMap<Stores, StorePreviewModel>().ReverseMap();
+            CreateMap<Articles, ArticlePreviewModel>()
+                .ForMember(dest => dest.ArticleId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.DescriptionName, opt => opt.MapFrom(src => src.Description.DescriptionName));
+
+            CreateMap<Stores, StorePreviewModel>()
+                .ForMember(dest => dest.StoreId, opt => opt.MapFrom(src => src.StoresId))
+                .ReverseMap();
 
             CreateMap<Descriptions, DescriptionPreviewModel>().ReverseMap();
         }

@@ -4,10 +4,7 @@ using Financije.Core.Contracts.Services;
 using Financije.Core.Entities;
 using Financije.Presentation.Models.Financije;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Financije.Presentation.Controllers.Api
 {
@@ -32,6 +29,30 @@ namespace Financije.Presentation.Controllers.Api
             return Ok(jsonData);
         }
 
+        [HttpGet("GetStoreDetails")]
+        public IActionResult GetStoreDetails(int Id)
+        {
+            StorePreviewModel store = _mapper.Map<StorePreviewModel>(_financijeService.GetStoreById(Id));
+            var jsonData = new { data = store };
+            return Ok(jsonData);
+        }
+
+        [HttpPost("GetArticles")]
+        public IActionResult GetArticles([FromForm] PagedRQuery model)
+        {
+            PagedRResult<Articles> result = _financijeService.SearchArticles(model);
+
+            var finalVM = new DatatableViewModel<ArticlePreviewModel>
+            {
+                Data = _mapper.Map<List<ArticlePreviewModel>>(result.Items),
+                Draw = model.Draw,
+                RecordsFiltered = result.Count,
+                RecordsTotal = result.Count
+            };
+
+            return Ok(finalVM);
+        }
+
         [HttpPost("GetDescriptions")]
         public IActionResult GetDescriptions([FromForm] PagedRQuery model)
         {
@@ -40,6 +61,22 @@ namespace Financije.Presentation.Controllers.Api
             var finalVM = new DatatableViewModel<DescriptionPreviewModel>
             {
                 Data = _mapper.Map<List<DescriptionPreviewModel>>(result.Items),
+                Draw = model.Draw,
+                RecordsFiltered = result.Count,
+                RecordsTotal = result.Count
+            };
+
+            return Ok(finalVM);
+        }
+
+        [HttpPost("GetStores")]
+        public IActionResult GetStores([FromForm] PagedRQuery model)
+        {
+            PagedRResult<Stores> result = _financijeService.SearchStores(model);
+
+            var finalVM = new DatatableViewModel<StorePreviewModel>
+            {
+                Data = _mapper.Map<List<StorePreviewModel>>(result.Items),
                 Draw = model.Draw,
                 RecordsFiltered = result.Count,
                 RecordsTotal = result.Count
@@ -66,10 +103,61 @@ namespace Financije.Presentation.Controllers.Api
             return Ok(message);
         }
 
-        [HttpGet("AddOrEditDescription")]
-        public IActionResult AddOrEditDescription(DescriptionViewModel model)
+        [HttpPost("DeleteStores")]
+        public IActionResult DeleteStores(int Id)
         {
-            return Ok();
+            var details = _financijeService.GetStoreById(Id);
+            string message = "";
+            if (details != null)
+            {
+                _financijeService.RemoveStore(Id);
+                //_logger.LogInformation("Certifikat izdan za " + cert.IssuedTo + " je obrisan.");
+                message = $"Deleted";
+            }
+            else
+            {
+                message = $"Not";
+            }
+            return Ok(message);
         }
+
+        [HttpPost("AddOrEditDescription")]
+        public IActionResult AddOrEditDescription([FromBody] DescriptionPreviewModel model)
+        {
+            string message = "";
+            if (model.DescriptionId != 0)
+            {
+                var description = _financijeService.GetDescriptionById(model.DescriptionId);
+                description.DescriptionName = model.DescriptionName;
+                _financijeService.EditDescription();
+                message = $"OK";
+            }
+            else
+            {
+                _financijeService.AddDescription(model.DescriptionName);
+                message = $"OK";
+            }
+            return Ok(message);
+        }
+
+        [HttpPost("AddOrEditStore")]
+        public IActionResult AddOrEditStore([FromBody] StorePreviewModel model)
+        {
+            string message = "";
+            if (model.StoreId != 0)
+            {
+                var description = _financijeService.GetStoreById(model.StoreId);
+                description.StoreName = model.StoreName;
+                _financijeService.EditStore();
+                message = $"OK";
+            }
+            else
+            {
+                _financijeService.AddStore(model.StoreName);
+                message = $"OK";
+            }
+            return Ok(message);
+        }
+
     }
 }

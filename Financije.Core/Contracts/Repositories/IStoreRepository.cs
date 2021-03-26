@@ -10,8 +10,6 @@ namespace Financije.Core.Contracts.Repositories
 
         PagedRResult<Stores> GetPaginatedResult(PagedRQuery request);
 
-        //(List<Stores> items, int count) GetPaginatedResult(int page, int size);
-
         Stores GetById(int id);
 
         Stores GetByNane(string name);

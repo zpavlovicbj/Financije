@@ -5,7 +5,8 @@ namespace Financije.Presentation.Models.Financije
 {
     public class StoreViewModel
     {
-        public int StoresId { get; set; }
+        [Display(Name = "Id")]
+        public int StoreId { get; set; }
 
         [Required(ErrorMessage ="Potrebno je unesti naziv.")]
         [Display(Name = "Naziv")]
@@ -13,6 +14,6 @@ namespace Financije.Presentation.Models.Financije
 
         public List<StorePreviewModel> StoreList { get; set; }
 
-        public List<int> ListPageSize { get; set; }
+        //public List<int> ListPageSize { get; set; }
     }
 }

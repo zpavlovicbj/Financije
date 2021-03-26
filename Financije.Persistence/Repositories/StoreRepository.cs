@@ -47,17 +47,6 @@ namespace Financije.Persistence.Repositories
             return _context.Stores.SingleOrDefault(c => c.StoreName == name);
         }
 
-        /*public (List<Stores> items, int count) GetPaginatedResult(int page, int size)
-        {
-            var query = _context.Stores.AsSingleQuery().OrderBy(o => o.StoreName);
-
-            int count = query.Count();
-
-            var items = query.Skip(page).Take(size).ToList();
-
-            return (items, count);
-        }*/
-
         public PagedRResult<Stores> GetPaginatedResult(PagedRQuery request)
         {
             IQueryable<Stores> query = _context.Stores;
