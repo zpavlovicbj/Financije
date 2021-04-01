@@ -23,10 +23,11 @@ namespace Financije.Service.Services
             _storeRepository = storeRepository;
         }
 
-        public void AddArticles(string articleName)
+        public void AddArticles(string articleName, int descriptionId)
         {
             var article = new Articles();
             article.ArticleName = articleName;
+            article.DescriptionId = descriptionId;
             _articleRepository.Add(article);
         }
 
@@ -91,7 +92,8 @@ namespace Financije.Service.Services
 
         public Articles GetArticlesById(int id)
         {
-            return _articleRepository.GetById(id);
+            var art = _articleRepository.GetById(id);
+            return art;
         }
 
         public Articles GetArticlesByName(string name)

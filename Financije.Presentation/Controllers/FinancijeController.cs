@@ -11,7 +11,6 @@ namespace Financije.Presentation.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IFinancijeService _financijeService;
-        public static int recPerPage = 10;
 
         public FinancijeController(IMapper mapper, IFinancijeService financijeService)
         {
@@ -42,7 +41,10 @@ namespace Financije.Presentation.Controllers
             articleVM.ArticlesList = _mapper.Map<List<ArticlePreviewModel>>(_financijeService.GetAllArticles());
 
             return View(articleVM);*/
-            return View();
+
+            ArticlePreviewModel article = new ArticlePreviewModel();
+            article.DescriptionsList = _financijeService.GetAllDescriptions();
+            return View(article);
         }
     }
 }

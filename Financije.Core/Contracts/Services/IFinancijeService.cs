@@ -17,7 +17,7 @@ namespace Financije.Core.Contracts.Services
 
         void RemoveArticles(int id);
 
-        void AddArticles(string descriptionName);
+        void AddArticles(string articleName, int descriptionId);
 
         Articles GetArticlesByName(string name);
 
@@ -32,6 +32,8 @@ namespace Financije.Core.Contracts.Services
         void RemoveDescription(int id);
 
         void AddDescription(string descriptionName);
+
+        List<Descriptions> GetAllDescriptions();
 
         Descriptions GetDescriptionByName(string name);
 

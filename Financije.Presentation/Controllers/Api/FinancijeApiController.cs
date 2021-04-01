@@ -21,22 +21,6 @@ namespace Financije.Presentation.Controllers.Api
             _financijeService = financijeService;
         }
 
-        [HttpGet("GetDescriptionDetails")]
-        public IActionResult GetDescriptionDetails(int Id)
-        {
-            DescriptionPreviewModel description = _mapper.Map<DescriptionPreviewModel>(_financijeService.GetDescriptionById(Id));
-            var jsonData = new { data = description };
-            return Ok(jsonData);
-        }
-
-        [HttpGet("GetStoreDetails")]
-        public IActionResult GetStoreDetails(int Id)
-        {
-            StorePreviewModel store = _mapper.Map<StorePreviewModel>(_financijeService.GetStoreById(Id));
-            var jsonData = new { data = store };
-            return Ok(jsonData);
-        }
-
         [HttpPost("GetArticles")]
         public IActionResult GetArticles([FromForm] PagedRQuery model)
         {
@@ -85,6 +69,47 @@ namespace Financije.Presentation.Controllers.Api
             return Ok(finalVM);
         }
 
+        [HttpGet("GetArticleDetails")]
+        public IActionResult GetArticleDetails(int Id)
+        {
+            ArticlePreviewModel article = _mapper.Map<ArticlePreviewModel>(_financijeService.GetArticlesById(Id));
+            var jsonData = new { data = article };
+            return Ok(jsonData);
+        }
+
+        [HttpGet("GetDescriptionDetails")]
+        public IActionResult GetDescriptionDetails(int Id)
+        {
+            DescriptionPreviewModel description = _mapper.Map<DescriptionPreviewModel>(_financijeService.GetDescriptionById(Id));
+            var jsonData = new { data = description };
+            return Ok(jsonData);
+        }
+
+        [HttpGet("GetStoreDetails")]
+        public IActionResult GetStoreDetails(int Id)
+        {
+            StorePreviewModel store = _mapper.Map<StorePreviewModel>(_financijeService.GetStoreById(Id));
+            var jsonData = new { data = store };
+            return Ok(jsonData);
+        }
+
+        [HttpPost("DeleteArticles")]
+        public IActionResult DeleteArticles(int Id)
+        {
+            var article = _financijeService.GetArticlesById(Id);
+            string message = "";
+            if(article != null)
+            {
+                _financijeService.RemoveArticles(Id);
+                message = $"Deleted";
+            }
+            else
+            {
+                message = $"Not";
+            }
+            return Ok(message);
+        }
+
         [HttpPost("DeleteDescriptions")]
         public IActionResult DeleteDescriptions(int Id)
         {
@@ -117,6 +142,29 @@ namespace Financije.Presentation.Controllers.Api
             else
             {
                 message = $"Not";
+            }
+            return Ok(message);
+        }
+
+        [HttpPost("AddOrEditArticle")]
+        public IActionResult AddOrEditArticle([FromBody] ArticlePreviewModel model)
+        {
+            string message = "";
+            if (model.ArticleId != 0)
+            {
+                var article = _financijeService.GetArticlesById(model.ArticleId);
+                article.ArticleName = model.ArticleName;
+                var description = _financijeService.GetDescriptionByName(model.DescriptionName);
+                article.DescriptionId = description.DescriptionId;
+                _financijeService.EditArticle();
+                message = $"OK";
+            }
+            else
+            {
+                var description = _financijeService.GetDescriptionByName(model.DescriptionName);
+                
+                _financijeService.AddArticles(model.ArticleName, description.DescriptionId);
+                message = $"OK";
             }
             return Ok(message);
         }

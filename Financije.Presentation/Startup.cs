@@ -1,3 +1,4 @@
+using Financije.Core;
 using Financije.Core.Contracts.Repositories;
 using Financije.Core.Contracts.Services;
 using Financije.Persistence;
@@ -38,6 +39,7 @@ namespace Financije.Presentation
             services.AddScoped<IArticleRepository, ArticleRepository>();
             services.AddScoped<IDescriptionsRepository, DescriptionsRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
+            //services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IFinancijeService, FinancijeService>();
             services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews();
