@@ -27,4 +27,13 @@
     <ProjectReference Include="..\Financije.Service\Financije.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Omu.Awem">
+      <HintPath>Libs\awesome\Omu.Awem.dll</HintPath>
+    </Reference>
+    <Reference Include="Omu.AwesomeMvc">
+      <HintPath>Libs\awesome\Omu.AwesomeMvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

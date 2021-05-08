@@ -1,0 +1,13 @@
+﻿@model Financije.Presentation.Models.Financije.ArticlePreviewModel;
+
+<div class="form-group">
+    <label hidden asp-for="ArticleId"></label>
+    <input hidden asp-for="ArticleId" class="form-control" id="ArticleId" />
+    <label asp-for="ArticleName"></label>
+    <input asp-for="ArticleName" class="form-control" id="Name" />
+    <label id="ErrorMessage" class="text-danger"></label>
+    <label asp-for="DescriptionName" class="control-label"></label>
+    <select asp-for="DescriptionName" asp-items="@(new SelectList(Model.DescriptionsList, "DescriptionId", "DescriptionName"))"
+            class="form-control" id="Name">
+    </select>
+</div>

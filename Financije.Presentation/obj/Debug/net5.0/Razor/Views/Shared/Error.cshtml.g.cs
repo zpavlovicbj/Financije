@@ -26,8 +26,22 @@ using Financije.Presentation.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\Views\_ViewImports.cshtml"
+using Omu.AwesomeMvc;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\Views\_ViewImports.cshtml"
+using Omu.Awem.Helpers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"666d42e5cce9fbb16c8022f409155bfc6833bf5c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3ae3bdfedcfbf9623a5f39379bb8f68b5134bc7b", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

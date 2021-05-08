@@ -39,10 +39,10 @@ namespace Financije.Persistence.Repositories
 
         public Stores GetById(int id)
         {
-            return _context.Stores.SingleOrDefault(c => c.StoresId == id);
+            return _context.Stores.SingleOrDefault(c => c.StoreId == id);
         }
 
-        public Stores GetByNane(string name)
+        public Stores GetByName(string name)
         {
             return _context.Stores.SingleOrDefault(c => c.StoreName == name);
         }
@@ -73,7 +73,7 @@ namespace Financije.Persistence.Repositories
 
         public void Remove(int id)
         {
-            Stores stores = _context.Stores.SingleOrDefault(s => s.StoresId == id);
+            Stores stores = _context.Stores.SingleOrDefault(s => s.StoreId == id);
             _context.Stores.Remove(stores);
             _context.SaveChanges();
         }

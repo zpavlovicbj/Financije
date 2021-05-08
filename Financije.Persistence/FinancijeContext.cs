@@ -17,7 +17,7 @@ namespace Financije.Persistence
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(FinancijeContext).Assembly);
 
             modelBuilder.Entity<Accounts>()
-                .HasKey(a => new { a.AccountsId });
+                .HasKey(a => new { a.AccountId });
 
             modelBuilder.Entity<Accounts>()
                 .HasOne(p => p.Store)
@@ -39,12 +39,31 @@ namespace Financije.Persistence
 
 
             modelBuilder.Entity<Articles>()
-                .HasKey(a => new {a.Id});
+                .HasKey(a => new {a.ArticleId});
 
             modelBuilder.Entity<Articles>()
                 .HasOne(p => p.Description)
                 .WithMany(b => b.Articles)
                 .HasForeignKey(p => p.DescriptionId);
+
+            modelBuilder.Entity<Descriptions>()
+                .HasKey(a => new { a.DescriptionId });
+
+            modelBuilder.Entity<Stores>()
+                .HasKey(a => new { a.StoreId });
+
+            modelBuilder.Entity<LinksArtDes>()
+                .HasKey(a => new { a.Id });
+
+            modelBuilder.Entity<LinksArtDes>()
+                .HasOne(p => p.Description)
+                .WithMany(b => b.LinksArtDes)
+                .HasForeignKey(p => p.DescriptionId);
+
+            modelBuilder.Entity<LinksArtDes>()
+                .HasOne(p => p.Stores)
+                .WithMany(b => b.LinksArtDes)
+                .HasForeignKey(p => p.StoreId);
 
         }
         public DbSet<Descriptions> Descriptions { get; set; }
@@ -53,6 +72,10 @@ namespace Financije.Persistence
 
         public DbSet<Stores> Stores { get; set; }
 
+        public DbSet<LinksArtDes> LinksArtDes { get; set; }
 
+        public DbSet<Accounts> Accounts { get; set; }
+
+        public DbSet<AccountItems> AccountItems { get; set; }
     }
 }

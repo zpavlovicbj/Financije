@@ -69,3 +69,55 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.dataTables_filter {
+    float: left !important;
+}
+
+.datatables_paginate {
+    float: right !important;
+}
+
+.dataTables_length {
+    margin-top: 10px !important;
+}
+
+table {
+    table-layout: fixed;
+}
+
+    table td {
+        word-wrap: break-word;
+        max-width: 400px;
+    }
+
+#example td {
+    white-space: inherit;
+}
+
+.uniqueClassName {
+    text-align: center;
+}
+
+.dataTable tr td {
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+
+.btn1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.show {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.invisible {
+    visibility: hidden;
+}

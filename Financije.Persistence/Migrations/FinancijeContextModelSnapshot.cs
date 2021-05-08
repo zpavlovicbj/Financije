@@ -47,7 +47,7 @@ namespace Financije.Persistence.Migrations
 
             modelBuilder.Entity("Financije.Core.Entities.Accounts", b =>
                 {
-                    b.Property<int>("AccountsId")
+                    b.Property<int>("AccountId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -62,8 +62,8 @@ namespace Financije.Persistence.Migrations
                     b.Property<int>("DescriptionId")
                         .HasColumnType("int");
 
-                    b.Property<byte>("Month")
-                        .HasColumnType("tinyint");
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
 
                     b.Property<double>("Payin")
                         .ValueGeneratedOnAdd()
@@ -78,7 +78,7 @@ namespace Financije.Persistence.Migrations
                     b.Property<int>("StoreId")
                         .HasColumnType("int");
 
-                    b.HasKey("AccountsId");
+                    b.HasKey("AccountId");
 
                     b.HasIndex("DescriptionId");
 
@@ -89,7 +89,7 @@ namespace Financije.Persistence.Migrations
 
             modelBuilder.Entity("Financije.Core.Entities.Articles", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ArticleId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -99,10 +99,15 @@ namespace Financije.Persistence.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("ArticleNameUC")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<int>("DescriptionId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("ArticleId");
 
                     b.HasIndex("DescriptionId");
 
@@ -121,24 +126,60 @@ namespace Financije.Persistence.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<string>("DescriptionNameUC")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
                     b.HasKey("DescriptionId");
 
                     b.ToTable("Descriptions");
                 });
 
+            modelBuilder.Entity("Financije.Core.Entities.LinksArtDes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("DescriptionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StoreId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DescriptionId");
+
+                    b.HasIndex("StoreId");
+
+                    b.ToTable("LinksArtDes");
+                });
+
             modelBuilder.Entity("Financije.Core.Entities.Stores", b =>
                 {
-                    b.Property<int>("StoresId")
+                    b.Property<int>("StoreId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("StoreName")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("StoresId");
+                    b.Property<string>("StoreNameAccount")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("StoreNameUC")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("StoreId");
 
                     b.ToTable("Stores");
                 });
@@ -184,6 +225,25 @@ namespace Financije.Persistence.Migrations
                     b.Navigation("Description");
                 });
 
+            modelBuilder.Entity("Financije.Core.Entities.LinksArtDes", b =>
+                {
+                    b.HasOne("Financije.Core.Entities.Descriptions", "Description")
+                        .WithMany("LinksArtDes")
+                        .HasForeignKey("DescriptionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Financije.Core.Entities.Stores", "Stores")
+                        .WithMany("LinksArtDes")
+                        .HasForeignKey("StoreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Description");
+
+                    b.Navigation("Stores");
+                });
+
             modelBuilder.Entity("Financije.Core.Entities.Articles", b =>
                 {
                     b.Navigation("AccountItems");
@@ -194,11 +254,15 @@ namespace Financije.Persistence.Migrations
                     b.Navigation("Accounts");
 
                     b.Navigation("Articles");
+
+                    b.Navigation("LinksArtDes");
                 });
 
             modelBuilder.Entity("Financije.Core.Entities.Stores", b =>
                 {
                     b.Navigation("Accounts");
+
+                    b.Navigation("LinksArtDes");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,164 +1,3 @@
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\appsettings.Development.json
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\appsettings.json
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.exe
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.deps.json
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.runtimeconfig.json
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.runtimeconfig.dev.json
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ref\Financije.Presentation.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.Views.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.Views.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csprojAssemblyReference.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.GeneratedMSBuildEditorConfig.editorconfig
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.AssemblyInfoInputs.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.AssemblyInfo.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csproj.CoreCompileInputs.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.MvcApplicationPartsAssemblyInfo.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorAssemblyInfo.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorAssemblyInfo.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\staticwebassets\Financije.Presentation.StaticWebAssets.Manifest.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\staticwebassets\Financije.Presentation.StaticWebAssets.xml
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\scopedcss\bundle\Financije.Presentation.styles.css
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.input.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.output.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorCoreGenerate.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorTargetAssemblyInfo.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorTargetAssemblyInfo.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.Views.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\ref\Financije.Presentation.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.genruntimeconfig.cache
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csproj.CopyComplete
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\web.config
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\AutoMapper.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Humanizer.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\NLog.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.Convention.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.Hosting.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.Runtime.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.TypedParts.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Data.SqlClient.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Runtime.Caching.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Core.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Persistence.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Persistence.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Core.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Service.dll
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Service.pdb
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\Index.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\StoreView.cshtml.g.cs
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\web.config
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\appsettings.json
@@ -304,7 +143,6 @@ C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Fin
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.output.cache
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorCoreGenerate.cache
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\Index.cshtml.g.cs
-C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\StoreView.cshtml.g.cs
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -320,9 +158,351 @@ C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Fin
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\ref\Financije.Presentation.dll
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.pdb
 C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.genruntimeconfig.cache
-C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\DescriptionView.cshtml.g.cs
-C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\PartialDescriptionView.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\DescriptionView.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\web.config
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\appsettings.Development.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\appsettings.json
 D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\libman.json
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ArticleView.cshtml.g.cs
-D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\_ArticlePartialView.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.exe
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.deps.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.runtimeconfig.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.runtimeconfig.dev.json
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ref\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.Views.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.Views.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\AutoMapper.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Humanizer.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\NLog.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Persistence.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Service.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Persistence.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Service.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Financije.Core.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csprojAssemblyReference.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.AssemblyInfoInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.AssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csproj.CoreCompileInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.MvcApplicationPartsAssemblyInfo.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorAssemblyInfo.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorAssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\staticwebassets\Financije.Presentation.StaticWebAssets.Manifest.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\staticwebassets\Financije.Presentation.StaticWebAssets.xml
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\scopedcss\bundle\Financije.Presentation.styles.css
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.input.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.output.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorCoreGenerate.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\Index.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorTargetAssemblyInfo.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorTargetAssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.Views.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csproj.CopyComplete
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\ref\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.pdb
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.genruntimeconfig.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewArticles.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\_ViewArticlePartial.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewDescriptions.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewStores.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\libman.json
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewArticles.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewDescriptions.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewStores.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\_ViewArticlePartial.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\EnterAccountData.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\EnterAccountData.cshtml.g.cs
+C:\Users\Zoki\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\EnterAccount.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\EnterAccount.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\VeiwAccounts.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\web.config
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\appsettings.Development.json
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\appsettings.json
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\libman.json
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.exe
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.deps.json
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.runtimeconfig.json
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.runtimeconfig.dev.json
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ref\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.Views.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Presentation.Views.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\AutoMapper.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Humanizer.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\NLog.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Core.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Persistence.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Service.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Persistence.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Service.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\bin\Debug\net5.0\Financije.Core.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csprojAssemblyReference.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.AssemblyInfoInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.AssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csproj.CoreCompileInputs.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.MvcApplicationPartsAssemblyInfo.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorAssemblyInfo.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorAssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\staticwebassets\Financije.Presentation.StaticWebAssets.Manifest.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\staticwebassets\Financije.Presentation.StaticWebAssets.xml
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\scopedcss\bundle\Financije.Presentation.styles.css
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.input.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.TagHelpers.output.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorCoreGenerate.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\EnterAccount.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\EnterAccountData.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\Index.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\VeiwAccounts.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewArticles.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewDescriptions.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\ViewStores.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Financije\_ViewArticlePartial.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorTargetAssemblyInfo.cache
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.RazorTargetAssemblyInfo.cs
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.Views.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.csproj.CopyComplete
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\ref\Financije.Presentation.dll
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.pdb
+D:\Users\zpavlovic1\source\repos\Financije - 1904\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.genruntimeconfig.cache
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Omu.Awem.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Omu.AwesomeMvc.dll
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Omu.Awem.xml
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\bin\Debug\net5.0\Omu.AwesomeMvc.xml
+D:\Users\zpavlovic1\source\repos\Financije\Financije.Presentation\obj\Debug\net5.0\Financije.Presentation.MvcApplicationPartsAssemblyInfo.cs

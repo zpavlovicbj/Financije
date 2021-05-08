@@ -1,0 +1,392 @@
+﻿@model Financije.Presentation.Models.Financije.AccountCreateModel;
+
+<div class="card mx-auto mt-2" style="width: 800px;">
+    <div class="card-header bg-primary text-uppercase text-white">
+        <h4>Unos računa</h4>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="row bg-light.bg-gradient">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input asp-for="Id" class="form-control" id="accId" />
+                        <label asp-for="Date" class="control-label"></label>
+                        <input class="form-control " id="date" asp-for="Date" type="text">
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="AccountNumber" class="control-label"></label>
+                        <input asp-for="AccountNumber" class="form-control" id="accountNumber" />
+                        <span asp-validation-for="AccountNumber" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Store" class="control-label"></label>
+                        <input type="text" list="stores" id="searchStores" asp-for="Store" class="form-control" />
+                        <datalist id="stores">
+                            @foreach (var item in Model.StoresList)
+                            {
+                                <option>@item.StoreName</option>
+                            }
+                        </datalist>
+                        <span asp-validation-for="Store" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float:right">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="button" id="btnAddAccount" class="btn btn-primary btn-sm" style="width:105px">Dodaj račun</button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Article" class="control-label"></label>
+                        <input type="text" list="articles" id="searchArticles" asp-for="Article" class="form-control" disabled />
+                        <datalist id="articles">
+                            @foreach (var item in Model.ArticleList)
+                            {
+                                <option>@item.ArticleName</option>
+                            }
+                        </datalist>
+                        <span asp-validation-for="Article" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label asp-for="Payin" class="control-label"></label>
+                        <input asp-for="Payin" class="form-control" id="price" disabled />
+                    </div>
+                </div>
+                <div class="col-md-3 align-self-end ml-auto">
+                    <div class="form-group">
+                        <button type="button" id="btnAddAccountItem" class="btn btn-primary btn-sm" style="width:105px">Dodaj stavku</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="accounItemstDatatable" class="table table-striped table-bordered dt-responsive" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Artikl</th>
+                                <th>Opis</th>
+                                <th>Cijena</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr />
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="form-group">
+                        <button type="button" id="btnEditAccountDetails" class="btn btn-primary btn-sm">Promijeni podatke o računu</button>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="form-group">
+                        <button type="button" id="btnAddAccountItem2" class="btn btn-primary" style="width:120px">Dodaj račun</button>
+                        <a asp-action="Index" asp-controller="Financije" class="btn btn-danger" style="width:110px">Odustani</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+    <link href="~/lib/jqueryui/jquery-ui.css" rel="stylesheet" />
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/jqueryui/jquery.ui.datepicker-hr.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            if ($('#accId').val() > 0) {
+                DisableAccountsDetails();
+                EnableAccountsItem();
+            }
+        });
+
+        $(document).ready(function () {
+            $('#btnAddAccount').click(function () {
+                var retVal = ValidateAccount();
+                if (retVal == 0) {
+                    SaveAccountDetails();
+                }
+                else if (retVal == 1) {
+                    alert("Nema broja računa!")
+                    $("#accountNumber").focus();
+                }
+                else if (retVal == 2) {
+                    alert("Nema odabrane trgovine!")
+                    $("#searchStores").focus();
+                }
+            });
+
+            $('#btnAddAccountItem').click(function () {
+                var retVal = ValidateAccountItems();
+                if (retVal == 0) {
+                    $('#searchArticles').focus();
+                }
+                else if (retVal == 1) {
+                    $('#payin').focus();
+                }
+                else if (retVal == 2) {
+                    AddAccountItems();
+                }
+            });
+
+            //Datatable
+            $('#accounItemstDatatable').dataTable({
+                "bAutoWidth": false,
+                "dom": "<'row'<'col-sm-12'tr>>" ,
+                "pagingType": "scrolling",
+                "serverSide": false,
+                "filter": false,
+                "pagingType": "full",
+                "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+                "language": {
+                    "emptyTable": "Nema podataka"
+                },
+                "oLanguage": {
+                    "sProcessing": "Učitavam podatke...",
+                    "sSearch": "Traži:",
+                    "sInfo": "_START_ do _END_. Ukupno: _TOTAL_",
+                    "sInfoEmpty": "0 od 0. Ukupno 0",
+                    "sLengthMenu": "_MENU_ po stranici",
+                    "oPaginate": {
+                        "sFirst": "<<",
+                        "sPrevious": "<",
+                        "sNext": ">",
+                        "sLast": ">>"
+                    }
+                },
+                "ajax": {
+                    "url": "../api/FinancijeApi/GetAccountsItems?Id=" + $('#accId').val(),
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columnDefs": [
+                    {
+                        "targets": [0],
+                        "width": "10%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [1],
+                        "width": "20%"
+                    },
+                    {
+                        "targets": [2],
+                        "width": "15%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [3],
+                        "width": "15%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [4],
+                        "width": "10%",
+                        "className": "text-right",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [5],
+                        "width": "10%",
+                        "className": "text-right",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [6],
+                        "width": "7%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [7],
+                        "width": "7%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                ],
+                "columns": [
+                    { "data": "date", "name": "Date", "autoWidth": false },
+                    { "data": "accountNumber", "name": "AccountNumber", "autoWidth": false },
+                    { "data": "storeName", "name": "StoreName", "autoWidth": false },
+                    { "data": "descriptionName", "name": "DescriptionName", "autoWidth": false },
+                    { "data": "payin", "name": "Payin", "autoWidth": false },
+                    { "data": "payout", "name": "Payout", "autoWidth": false },
+                    {
+                        "data": "accountId", "width": "50px", className: "uniqueClassName", "render": function (data) {
+                            return "<a href='#' data-id='" + data + "'class='btn1 btn-info btn-sm view-details'>Uredi</a>";
+                        }
+                    },
+                    {
+                        "data": "accountId", className: "uniqueClassName", "render": function (data) {
+                            return "<a href='#' class='btn1 btn-danger btn-sm' onclick='DeleteAccount(" + data + ")' >Briši</a>";
+                        }
+                    },
+                ]
+            });
+
+            $('#btnEditAccountDetails').click(function () {
+                EnableAccountsDetails();
+                DisableAccountsItem();
+            });
+
+            $('#date').datepicker({
+                dateFormat: "dd.mm.yy",
+            });
+        });
+
+        function EnableAccountsDetails() {
+            $('#date').prop("disabled", false);
+            $('#accountNumber').prop("disabled", false);
+            $('#searchStores').prop("disabled", false);
+            $('#btnAddAccount').prop("disabled", false);
+        }
+
+        function DisableAccountsDetails() {
+            $('#date').prop("disabled", true);
+            $('#accountNumber').prop("disabled", true);
+            $('#searchStores').prop("disabled", true);
+            $('#btnAddAccount').prop("disabled", true);
+        }
+
+        function EnableAccountsItem() {
+            $('#searchArticles').prop("disabled", false);
+            $('#price').prop("disabled", false);
+            $('#btnAddAccountItem').prop("disabled", false);
+            $('#btnEditAccountDetails').prop("disabled", false);
+        }
+
+        function DisableAccountsItem() {
+            $('#searchArticles').prop("disabled", true);
+            $('#price').prop("disabled", true);
+            $('#btnAddAccountItem').prop("disabled", true);
+            $('#btnEditAccountDetails').prop("disabled", true);
+        }
+
+        function ValidateAccount() {
+            var accountNr = $('#accountNumber').val();
+            var storeName = $('#searchStores').val();
+
+            if (accountNr && accountNr.trim() && storeName && storeName.trim()) {
+                return 0;
+            }
+            else {
+                if (!accountNr && !accountNr.trim()) {
+                    return 1;
+                }
+                if (!storeName && !storeName.trim()) {
+                    return 2;
+                }
+            }
+        }
+
+        function SaveAccountDetails() {
+            var id = $('#accId').val();
+            var accountNr = $('#accountNumber').val();
+            var store = $('#searchStores').val();
+            var date = $('#date').val().split(".");
+            var accDate = (date[2] + "-" + date[1] + "-" + date[0]);
+
+            if (id == null) {
+                id = 0;
+            }
+            if (accountNr && accountNr.trim()) {
+                var obj = { Id: id, AccountNumber: accountNr, Store: store, AccountDate: accDate };
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "../api/FinancijeApi/AddOrEditAccountDetails",
+                    data: JSON.stringify(obj),
+                    datatype: "json",
+                    success: function (data) {
+                        if (data != "Duplo") {
+                            $('#accId').val(data);
+                            DisableAccountsDetails()
+                            EnableAccountsItem();
+                        }
+                        else {
+                            alert("Račun s tim brojem već postoji!!");
+                            $("#accountNumber").focus();
+                        }
+                    },
+                    error: function (data) {
+                        alert("Greška!");
+                    }
+                });
+            }
+        }
+
+        function ValidateAccountItems() {
+            var article = $('#searchArticles').val();
+            var payin = $('#payin').val();
+            var payout = $('#payout').val();
+
+            if (!article && !article.trim()) {
+                return 0;
+            }
+            if (payin == 0 && payout == 0) {
+                return 1;
+            }
+            return 2;
+        }
+
+        function AddAccountItems() {
+            var id = $('#accId').val();
+            var article = $('#searchArticles').val();
+            var price = parseFloat($('#price').val().replace(",", "."));
+
+            var obj = { AccountId: id, Article: article, Price: price };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "../api/FinancijeApi/AddArticleItem",
+                data: JSON.stringify(obj),
+                datatype: "json",
+                success: function (data) {
+                    alert("ok");
+                },
+                error: function (data) {
+                    alert("Greška!");
+                }
+            });
+        }
+
+    </script>
+
+
+}

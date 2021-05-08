@@ -1,0 +1,77 @@
+﻿@model Financije.Presentation.Models.Financije.AccountDataCreateModel;
+
+<div class="card mx-auto mt-2" style="width: 600px;">
+    <div class="card-header bg-primary text-uppercase text-white">
+        <h4>Unos računa</h4>
+    </div>
+    <div class="card-body">
+        <form enctype="multipart/form-data" asp-controller="Financije" asp-action="EnterAccountData" method="post">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <input asp-for="Id" class="form-control" />
+                        <label asp-for="Date" class="control-label"></label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label asp-for="Store" class="control-label"></label>
+                        <input type="text" list="stores" id="searchStores" asp-for="Store" class="form-control" />
+                        <datalist id="stores">
+                                @foreach (var item in Model.StoresList)
+                                {
+                                    <option>@item.StoreName</option>
+                                }
+                            </datalist>
+                        <span asp-validation-for="Store" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input list="descriptions" id="searchDescriptions" asp-for="Description" class="form-control" />
+                        <datalist id="descriptions">
+                                @foreach (var item in Model.DescriptionsList)
+                                {
+                                    <option>@item.DescriptionName</option>
+                                }
+                            </datalist>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label asp-for="Payin" class="control-label"></label>
+                        <input asp-for="Payin" class="form-control" />
+                        <span asp-validation-for="Payin" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label asp-for="Payout" class="control-label"></label>
+                        <input asp-for="Payout" class="form-control" />
+                        <span asp-validation-for="Payout" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Spremi" class="btn btn-primary" style="width:90px" />
+                <a asp-action="Index" asp-controller="Financije" class="btn btn-danger">Odustani</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Validacija unosa-->
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+
+}

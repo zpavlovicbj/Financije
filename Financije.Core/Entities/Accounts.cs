@@ -9,7 +9,7 @@ namespace Financije.Core.Entities
     {
         [Key]
         [Required]
-        public int AccountsId { get; set; }
+        public int AccountId { get; set; }
 
         [Required]
         public DateTime Date { get; set; }
@@ -30,6 +30,6 @@ namespace Financije.Core.Entities
 
         public double Payin { get; set; }
 
-        public byte Month { get; set; }
+        public int Month { get; set; }
     }
 }

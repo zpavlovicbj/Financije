@@ -10,7 +10,7 @@ namespace Financije.Presentation.Models.Financije
 
         [Required(ErrorMessage ="Potrebno je unesti naziv.")]
         [Display(Name = "Naziv")]
-        public string StoreName { get; set; }
+        public string Name { get; set; }
 
         public List<StorePreviewModel> StoreList { get; set; }
 

@@ -12,7 +12,7 @@ namespace Financije.Core.Contracts.Repositories
 
         Descriptions GetById(int id);
 
-        Descriptions GetByNane(string name);
+        Descriptions GetByName(string name);
 
         int Count();
 

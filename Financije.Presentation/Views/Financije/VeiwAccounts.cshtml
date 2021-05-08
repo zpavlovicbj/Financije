@@ -1,0 +1,451 @@
+﻿@model Financije.Presentation.Models.Financije.AccountCreateModel;
+
+<div class="card mx-auto mt-2">
+    <div class="card-header bg-primary text-uppercase text-white">
+        <h4>Pregled računa</h4>
+    </div>
+    <div class="card-body">
+        <table id="accountDatatable" class="table table-striped table-bordered dt-responsive" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Broj računa</th>
+                    <th>Trgovina</th>
+                    <th>Opis</th>
+                    <th>Uplata</th>
+                    <th>Isplata</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<div class="modal" id="myModalAccountDetails">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-uppercase text-white">
+                <h4 class="modal-title">Unos računa</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <form enctype="multipart/form-data" asp-controller="Financije" asp-action="EnterAccountData" method="post">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <input asp-for="Id" class="form-control" id="accountId" />
+                                <label asp-for="Date" class="control-label"></label>
+                                <input asp-for="Date" class="form-control" type="text" id="accDate" />
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label asp-for="Store" class="control-label"></label>
+                                <input type="text" list="stores" id="searchStores" asp-for="Store" class="form-control" />
+                                <datalist id="stores">
+                                    @foreach (var item in Model.StoresList)
+                                    {
+                                        <option>@item.StoreName</option>
+                                    }
+                                </datalist>
+                                <span asp-validation-for="Store" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label asp-for="Description" class="control-label"></label>
+                                <input list="descriptions" id="searchDescriptions" asp-for="Description" class="form-control" />
+                                <datalist id="descriptions">
+                                    @foreach (var item in Model.DescriptionsList)
+                                    {
+                                        <option>@item.DescriptionName</option>
+                                    }
+                                </datalist>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label asp-for="Payin" class="control-label"></label>
+                                <input asp-for="Payin" class="form-control" id="payin" />
+                                <span asp-validation-for="Payin" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label asp-for="Payout" class="control-label"></label>
+                                <input asp-for="Payout" class="form-control" id="payout" />
+                                <span asp-validation-for="Payout" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" id="btnSaveAccountData" style="width:90px">Spremi</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="width:90px">Odustani</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="myModalAccount">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-uppercase text-white">
+                <h4 class="modal-title">Unos računa</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row bg-light.bg-gradient">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input asp-for="Id" class="form-control hidden" id="accountId1" />
+                                <label asp-for="Date" class="control-label"></label>
+                                <input class="form-control " id="accDate1" asp-for="Date" type="text">
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="AccountNumber" class="control-label"></label>
+                                <input asp-for="AccountNumber" class="form-control" id="accountNumber1" />
+                                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="Store" class="control-label"></label>
+                                <input type="text" list="stores" id="searchStores1" asp-for="Store" class="form-control" />
+                                <datalist id="stores">
+                                    @foreach (var item in Model.StoresList)
+                                    {
+                                        <option>@item.StoreName</option>
+                                    }
+                                </datalist>
+                                <span asp-validation-for="Store" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="float:right">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="button" id="btnAddAccount" class="btn btn-primary btn-sm" style="width:105px">Dodaj račun</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Article" class="control-label"></label>
+                                <input type="text" list="articles" id="searchArticles1" asp-for="Article" class="form-control" disabled />
+                                <datalist id="articles">
+                                    @foreach (var item in Model.ArticleList)
+                                    {
+                                        <option>@item.ArticleName</option>
+                                    }
+                                </datalist>
+                                <span asp-validation-for="Article" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label asp-for="Payin" class="control-label"></label>
+                                <input asp-for="Payin" class="form-control" id="payin1" disabled />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label asp-for="Payout" class="control-label"></label>
+                                <input asp-for="Payout" class="form-control" id="payout1" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="float:right">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <button type="button" id="btnAddAccountItem" class="btn btn-primary btn-sm" style="width:105px" disabled>Dodaj stavku</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                    <hr />
+                    @*<div class="row">
+                        <div class="form-group">
+                            <button type="button" id="btnAddAccountItem" class="btn btn-primary" style="width:120px">Dodaj račun</button>
+                            <a asp-action="Index" asp-controller="Financije" class="btn btn-danger" style="width:110px">Odustani</a>
+                        </div>
+                    </div>*@
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="width:90px">Odustani</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+    <link href="~/lib/jqueryui/jquery-ui.css" rel="stylesheet" />
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/lib/jqueryui/jquery.ui.datepicker-hr.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#accountDatatable").on("click", "a.view-details", function () {
+                const id = $(this).data("id");
+                $.ajax({
+                    type: "GET",
+                    url: "../api/FinancijeApi/GetAccountData",
+                    data: { 'Id': id },
+                    dataType: 'JSON',
+                    success: function (response) {
+                        if (response.data.descriptionName == "-") {
+                            ShowAccount(response);
+                        }
+                        else {
+                            ShowAccountDetails(response);
+                        }
+                    },
+                    error: function () {
+                        alert("Došlo je do greške!");
+                    },
+                });
+            })
+
+            $("#btnSaveAccountData").click(function () {
+                SaveAccountData();
+            });
+
+            //Datatable
+            $('#accountDatatable').dataTable({
+                "bAutoWidth": false,
+                "dom": "<'row'<'col-sm-6'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-4'i>>" +
+                    "<'row'<'col-sm-8'l><'col-sm-4'p >> ",
+                "pagingType": "scrolling",
+                "serverSide": true,
+                "filter": true,
+                "pagingType": "full",
+                "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+                "language": {
+                    "emptyTable": "Nema podataka"
+                },
+                "oLanguage": {
+                    "sProcessing": "Učitavam podatke...",
+                    "sSearch": "Traži:",
+                    "sInfo": "_START_ do _END_. Ukupno: _TOTAL_",
+                    "sInfoEmpty": "0 od 0. Ukupno 0",
+                    "sLengthMenu": "_MENU_ po stranici",
+                    "oPaginate": {
+                        "sFirst": "<<",
+                        "sPrevious": "<",
+                        "sNext": ">",
+                        "sLast": ">>"
+                    }
+                },
+                "ajax": {
+                    "url": "../api/FinancijeApi/GetAccounts/",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columnDefs": [
+                    {
+                        "targets": [0],
+                        "width": "10%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [1],
+                        "width": "20%"
+                    },
+                    {
+                        "targets": [2],
+                        "width": "15%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [3],
+                        "width": "15%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [4],
+                        "width": "10%",
+                        "className": "text-right",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [5],
+                        "width": "10%",
+                        "className": "text-right",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [6],
+                        "width": "7%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                    {
+                        "targets": [7],
+                        "width": "7%",
+                        "searchable": false,
+                        "orderable": false
+                    },
+                ],
+                "columns": [
+                    { "data": "date", "name": "Date", "autoWidth": false },
+                    { "data": "accountNumber", "name": "AccountNumber", "autoWidth": false },
+                    { "data": "storeName", "name": "StoreName", "autoWidth": false },
+                    { "data": "descriptionName", "name": "DescriptionName", "autoWidth": false },
+                    { "data": "payin", "name": "Payin", "autoWidth": false },
+                    { "data": "payout", "name": "Payout", "autoWidth": false },
+                    {
+                        "data": "accountId", "width": "50px", className: "uniqueClassName", "render": function (data) {
+                            return "<a href='#' data-id='" + data + "'class='btn1 btn-info btn-sm view-details'>Uredi</a>";
+                        }
+                    },
+                    {
+                        "data": "accountId", className: "uniqueClassName", "render": function (data) {
+                            return "<a href='#' class='btn1 btn-danger btn-sm' onclick='DeleteAccount(" + data + ")' >Briši</a>";
+                        }
+                    },
+                ]
+            });
+
+            $("#accDate").datepicker($.extend({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: "dd.mm.yy",
+            },
+                $.datepicker.regional['hr']
+            ));
+
+        });
+
+        function ShowAccountDetails(response) {
+            $('#accountId').val(response.data.accountId);
+            $('#accDate').val(response.data.date);
+            $('#searchStores').val(response.data.storeName);
+            $('#searchDescriptions').val(response.data.descriptionName);
+            $('#payin').val(response.data.payin);
+            $('#payout').val(response.data.payout);
+            $('#myModalAccountDetails').modal('show');
+        }
+
+        function ShowAccount(response) {
+            $('#accountId1').val(response.data.accountId);
+            $('#accDate1').val(response.data.date);
+            $('#accountNumber1').val(response.data.accountNumber);
+            $('#searchStores1').val(response.data.storeName);
+
+            $('#myModalAccount').modal('show');
+        }
+
+        //snima podatke o računu (AccountData)
+        function SaveAccountData() {
+            var id = $('#accountId').val();
+            var date = $('#accDate').val().split(".");
+            var accountDate = (date[2] + "-" + date[1] + "-" + date[0]);
+            var store = $('#searchStores').val();
+            var description = $('#searchDescriptions').val();
+            var payin = parseFloat($('#payin').val().replace(".", "").replace(",", "."));
+            var payout = parseFloat($('#payout').val().replace(".", "").replace(",", "."));
+
+            var obj = { Id: id, AccountDate: accountDate, Store: store, Description: description, Payin: payin, Payout: payout };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "../api/FinancijeApi/AddOrEditAccountData",
+                data: JSON.stringify(obj),
+                datatype: "json",
+                success: function (data) {
+                    oTable = $('#accountDatatable').DataTable();
+                    oTable.draw(false);
+                    $('#myModalAccountDetails').modal('hide');
+                },
+                error: function (data) {
+                    alert("Došlo je do greške!");
+                },
+            });
+        }
+
+        //Briše račun
+        function DeleteAccount(Id) {
+            if (confirm("Da li stvarno želiš obrisati račun?")) {
+                var url = "../api/FinancijeApi/DeleteAccount?Id=" + Id;
+                $.post(url, function (data) {
+                    if (data == "Deleted") {
+                        oTable = $('#accountDatatable').DataTable();
+                        oTable.draw(false);
+                    }
+                    else {
+                        alert("Brisanje nije uspjelo!");
+                    }
+                });
+            }
+            else {
+                return false;
+            }
+        }
+
+        //Odabir datuma
+        $(function () {
+            $("#accDate").datepicker({
+                dateFormat: "dd.mm.yy",
+                minDate: new Date(2021, 0, 1),
+            });
+
+            $("#accDate1").datepicker({
+                dateFormat: "dd.mm.yy",
+                minDate: new Date(2021, 0, 1),
+            });
+        });
+    </script>
+
+}

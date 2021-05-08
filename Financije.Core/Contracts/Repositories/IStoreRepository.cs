@@ -12,7 +12,7 @@ namespace Financije.Core.Contracts.Repositories
 
         Stores GetById(int id);
 
-        Stores GetByNane(string name);
+        Stores GetByName(string name);
 
         int Count();
 

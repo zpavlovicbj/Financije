@@ -42,9 +42,9 @@ namespace Financije.Persistence.Repositories
             return _context.Descriptions.SingleOrDefault(d => d.DescriptionId == id);
         }
 
-        public Descriptions GetByNane(string name)
+        public Descriptions GetByName(string name)
         {
-            return _context.Descriptions.SingleOrDefault(d => d.DescriptionName == name);
+            return _context.Descriptions.SingleOrDefault(d => d.DescriptionNameUC == name.ToUpper());
         }
 
 

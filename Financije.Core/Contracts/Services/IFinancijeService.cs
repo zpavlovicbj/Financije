@@ -9,50 +9,89 @@ namespace Financije.Core.Contracts.Services
 {
     public interface IFinancijeService
     {
-        List<Articles> GetAllArticles();
+        void AddAccount(Accounts account);
 
-        PagedRResult<Articles> SearchArticles(PagedRQuery query);
+        void AddAccountDetail(Accounts account);
+
+        void AddAcountItem(AccountItems accountItems);
+
+        void AddArticles(string Name, int descriptionId);
+
+        void AddDescription(string Name);
+
+        void AddStore(string Name);
+
+
+        int CountAccounts();
+
+        int CountAcountItem();
+
+        int CountAcountItem(int accountId);
 
         int CountArticles();
 
-        void RemoveArticles(int id);
-
-        void AddArticles(string articleName, int descriptionId);
-
-        Articles GetArticlesByName(string name);
-
-        Articles GetArticlesById(int id);
-
-        void EditArticle();
-
-        PagedRResult<Descriptions> SearchDescriptions(PagedRQuery query);
-
         int CountDescriptions();
-
-        void RemoveDescription(int id);
-
-        void AddDescription(string descriptionName);
-
-        List<Descriptions> GetAllDescriptions();
-
-        Descriptions GetDescriptionByName(string name);
-
-        Descriptions GetDescriptionById(int id);
-
-        void EditDescription();
-
-        PagedRResult<Stores> SearchStores(PagedRQuery query);
 
         int CountStores();
 
-        void RemoveStore(int id);
 
-        void AddStore(string storeName);
+        void EditAccount();
 
-        Stores GetStoreByName(string name);
+        void EditArticle();
+
+        void EditDescription();
+
+        void EditStore();
+
+
+        List<Accounts> GetAllAccounts();
+
+        List<AccountItems> GetAccountItemsByAccountId(int accountId); 
+
+        List<Articles> GetAllArticles();
+
+        List<Descriptions> GetAllDescriptions();
+
+        List<Stores> GetAllStores();
+
+
+        Accounts GetAccountsById(int id);
+
+        Articles GetArticlesById(int id);
+
+        Descriptions GetDescriptionById(int id);
 
         Stores GetStoreById(int id);
 
-        void EditStore();
+
+        Accounts GetAccountsByName(string name);
+
+        Articles GetArticlesByName(string name);
+
+        Descriptions GetDescriptionByName(string name);
+
+        Stores GetStoreByName(string name);
+
+
+        PagedRResult<Accounts> SearchAccounts(PagedRQuery query);
+
+        PagedRResult<AccountItems> SearchAccountItems(PagedRQuery query, int id);
+
+        PagedRResult<Articles> SearchArticles(PagedRQuery query);
+
+        PagedRResult<Descriptions> SearchDescriptions(PagedRQuery query);
+
+        PagedRResult<Stores> SearchStores(PagedRQuery query);
+
+
+        void RemoveAccount(int id);
+
+        void RemoveArticles(int id);
+
+        void RemoveDescription(int id);
+
+        void RemoveStore(int id);
+
+        int GetLastAccountId();
     }
 }

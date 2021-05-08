@@ -9,12 +9,21 @@ namespace Financije.Core.Entities
     {
         [Key]
         [Required]
-        public int StoresId { get; set; }
+        public int StoreId { get; set; }
 
         [Required]
-        [MaxLength(30)]
+        [MaxLength(50)]
         public string StoreName { get; set; }
 
+        [Required]
+        [MaxLength(50)]
+        public string StoreNameUC { get; set; }
+
+        [MaxLength(50)]
+        public string StoreNameAccount { get; set; }
+
         public virtual List<Accounts> Accounts { get; set; }
+
+        public virtual List<LinksArtDes> LinksArtDes { get; set; }
     }
 }

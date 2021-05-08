@@ -7,11 +7,15 @@ namespace Financije.Core.Entities
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public int ArticleId { get; set; }
 
         [Required]
         [MaxLength(50)]
         public string ArticleName { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string ArticleNameUC { get; set; }
 
         public int DescriptionId { get; set; }
 

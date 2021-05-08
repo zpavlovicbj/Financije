@@ -7,7 +7,10 @@ namespace Financije.Presentation.Models.Financije
         public int StoreId { get; set; }
 
         [Required]
-        [Display(Name = "Platitelj/Primatelj")]
+        [Display(Name = "Trgovina")]
         public string StoreName { get; set; }
+
+        [Display(Name = "Trgovina s računa")]
+        public string StoreNameAccount { get; set; }
     }
 }
