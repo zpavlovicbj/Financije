@@ -63,8 +63,8 @@
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label asp-for="Payin" class="control-label"></label>
-                        <input asp-for="Payin" class="form-control" id="price" disabled />
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" id="price" disabled />
                     </div>
                 </div>
                 <div class="col-md-3 align-self-end ml-auto">
@@ -78,14 +78,20 @@
                     <table id="accounItemstDatatable" class="table table-striped table-bordered dt-responsive" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Id</th>
                                 <th>Artikl</th>
                                 <th>Opis</th>
                                 <th>Cijena</th>
                                 <th></th>
+                                <th></th>
                             </tr>
                         </thead>
                     </table>
+                </div>
+            </div>
+            <div class="col-md-3 ml-lg-5">
+                <div class="form-group">
+                    <label class="control-label">Ukupno: </label>
+                    <label class="control-label" id="totalPrice"/>
                 </div>
             </div>
             <br />
@@ -127,6 +133,7 @@
             if ($('#accId').val() > 0) {
                 DisableAccountsDetails();
                 EnableAccountsItem();
+                SumAccountItems();
             }
         });
 
@@ -156,6 +163,8 @@
                 }
                 else if (retVal == 2) {
                     AddAccountItems();
+                    var total = SumAccountItems();
+                    $('#total').val(total);
                 }
             });
 
@@ -192,48 +201,47 @@
                 "columnDefs": [
                     {
                         "targets": [0],
-                        "width": "10%",
+                        "width": "37%",
+                    },
+                    {
+                        "targets": [1],
+                        "width": "28%",
                         "searchable": false,
                         "orderable": false
                     },
                     {
-                        "targets": [1],
-                        "width": "20%"
-                    },
-                    {
                         "targets": [2],
                         "width": "15%",
+                        "className": "text-right",
                         "searchable": false,
                         "orderable": false
                     },
                     {
                         "targets": [3],
-                        "width": "15%",
+                        "width": "10%",
                         "searchable": false,
                         "orderable": false
                     },
                     {
                         "targets": [4],
                         "width": "10%",
-                        "className": "text-right",
                         "searchable": false,
                         "orderable": false
                     },
 
                 ],
                 "columns": [
-                    { "data": "id", "name": "Id", "autoWidth": false },
                     { "data": "article", "name": "Article", "autoWidth": false },
                     { "data": "description", "name": "Description", "autoWidth": false },
-                    { "data": "payout", "name": "Payout", "autoWidth": false },
+                    { "data": "price", "name": "Price", "autoWidth": false },
                     {
-                        "data": "accountId", "width": "50px", className: "uniqueClassName", "render": function (data) {
+                        "data": "id", "width": "50px", className: "uniqueClassName", "render": function (data) {
                             return "<a href='#' data-id='" + data + "'class='btn1 btn-info btn-sm view-details'>Uredi</a>";
                         }
                     },
                     {
-                        "data": "accountId", className: "uniqueClassName", "render": function (data) {
-                            return "<a href='#' class='btn1 btn-danger btn-sm' onclick='DeleteAccount(" + data + ")' >Briši</a>";
+                        "data": "id", className: "uniqueClassName", "render": function (data) {
+                            return "<a href='#' class='btn1 btn-danger btn-sm' onclick='DeleteAccountItem(" + data + ")' >Briši</a>";
                         }
                     },
                 ]
@@ -358,7 +366,8 @@
                 data: JSON.stringify(obj),
                 datatype: "json",
                 success: function (data) {
-                    alert("ok");
+
+                    location.reload();
                 },
                 error: function (data) {
                     alert("Greška!");
@@ -366,6 +375,32 @@
             });
         }
 
+        function SumAccountItems() {
+            var id = $('#accId').val();
+
+            var url = "../api/FinancijeApi/TotalAccountItem?Id=" + id;
+            $.post(url, function (data) {
+                alert(data);
+                $('#totalPrice').val(data);
+            });
+        }
+
+        function DeleteAccountItem(Id) {
+            if (confirm("Da li stvarno želiš obrisati stavku?")) {
+                var url = "../api/FinancijeApi/DeleteAccountItem?Id=" + Id;
+                $.post(url, function (data) {
+                    if (data == "Deleted") {
+                        location.reload();
+                    }
+                    else {
+                        alert("Brisanje nije uspjelo!");
+                    }
+                });
+            }
+            else {
+                return false;
+            }
+        }
     </script>
 
 

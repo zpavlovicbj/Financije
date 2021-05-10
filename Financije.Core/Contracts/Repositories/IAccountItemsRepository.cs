@@ -14,8 +14,6 @@ namespace Financije.Core.Contracts.Repositories
 
         AccountItem GetById(int id);
 
-        List<AccountItem> GetByAccountId(int accountId);
-
         int Count();
 
         int Count(int accountId);
@@ -26,7 +24,6 @@ namespace Financije.Core.Contracts.Repositories
 
         void Remove(int id);
 
-        void RemoveByAccountId(int accountId);
-
+        double SumById(int id);
     }
 }

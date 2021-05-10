@@ -41,9 +41,16 @@ namespace Financije.Service.Services
 
         }
 
-        public void AddAcountItem(AccountItem accountItems)
+        public void AddAcountItem(AccountItemRModel item)
         {
-            _accountItemsRepository.Add(accountItems);
+            AccountItem accountItem = new AccountItem
+            {
+                AccountId = item.AccountId,
+                ArticleId = item.ArticleId,
+                Price = item.Price,
+            };
+
+            _accountItemsRepository.Add(accountItem);
         }
 
         public void AddArticles(string name, int descriptionId)
@@ -263,12 +270,27 @@ namespace Financije.Service.Services
 
         public List<AccountItem> GetAccountItemsByAccountId(int accountId)
         {
-            return _accountItemsRepository.GetByAccountId(accountId);
+            return _accountItemsRepository.GetAll(accountId);
         }
 
         public PagedRResult<AccountItem> SearchAccountItems(PagedRQuery query, int id)
         {
             return _accountItemsRepository.GetPaginatedResult(query, id);
+        }
+
+        public AccountItem GetAccountItemById(int id)
+        {
+            return _accountItemsRepository.GetById(id);
+        }
+
+        public void RemoveAccountItem(int id)
+        {
+            _accountItemsRepository.Remove(id);
+        }
+
+        public double TotalAccountItems(int id)
+        {
+            return _accountItemsRepository.SumById(id);
         }
     }
 }

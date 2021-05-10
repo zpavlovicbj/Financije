@@ -19,7 +19,7 @@ namespace Financije.Persistence.Migrations
                 .HasAnnotation("ProductVersion", "5.0.4")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Financije.Core.Entities.AccountItems", b =>
+            modelBuilder.Entity("Financije.Core.Entities.AccountItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,10 +32,7 @@ namespace Financije.Persistence.Migrations
                     b.Property<int>("ArticleId")
                         .HasColumnType("int");
 
-                    b.Property<double>("Payin")
-                        .HasColumnType("float");
-
-                    b.Property<double>("Payout")
+                    b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
@@ -184,7 +181,7 @@ namespace Financije.Persistence.Migrations
                     b.ToTable("Stores");
                 });
 
-            modelBuilder.Entity("Financije.Core.Entities.AccountItems", b =>
+            modelBuilder.Entity("Financije.Core.Entities.AccountItem", b =>
                 {
                     b.HasOne("Financije.Core.Entities.Articles", "Article")
                         .WithMany("AccountItems")

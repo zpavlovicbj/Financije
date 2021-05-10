@@ -16,8 +16,6 @@ namespace Financije.Core.Entities
 
         public virtual Articles Article { get; set; }
 
-        public double Payout { get; set; }
-
-        public double Payin { get; set; }
+        public double Price { get; set; }
     }
 }

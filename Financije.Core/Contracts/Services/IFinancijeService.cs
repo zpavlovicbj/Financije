@@ -1,5 +1,6 @@
 ﻿using Financije.Core.Contracts.Repositories;
 using Financije.Core.Contracts.Repositories.Models;
+
 using Financije.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Financije.Core.Contracts.Services
 
         void AddAccountDetail(Accounts account);
 
-        void AddAcountItem(AccountItem accountItems);
+        void AddAcountItem(AccountItemRModel accountItems);
 
         void AddArticles(string Name, int descriptionId);
 
@@ -57,6 +58,8 @@ namespace Financije.Core.Contracts.Services
 
         Accounts GetAccountsById(int id);
 
+        AccountItem GetAccountItemById(int id);
+
         Articles GetArticlesById(int id);
 
         Descriptions GetDescriptionById(int id);
@@ -86,6 +89,8 @@ namespace Financije.Core.Contracts.Services
 
         void RemoveAccount(int id);
 
+        void RemoveAccountItem(int id);
+
         void RemoveArticles(int id);
 
         void RemoveDescription(int id);
@@ -93,5 +98,7 @@ namespace Financije.Core.Contracts.Services
         void RemoveStore(int id);
 
         int GetLastAccountId();
+
+        double TotalAccountItems(int id);
     }
 }

@@ -41,5 +41,7 @@ namespace Financije.Presentation.Models.Financije
 
         [Display(Name = "Uplata")]
         public double Payin { get; set; }
+
+        public double Price { get; set; }
     }
 }

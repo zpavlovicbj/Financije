@@ -11,6 +11,8 @@ namespace Financije.Presentation.Models.Financije
 
         public int AccountId { get; set; }
 
+        public int ArticleId { get; set; }
+
         public string Article { get; set; }
 
         public string Description { get; set; }

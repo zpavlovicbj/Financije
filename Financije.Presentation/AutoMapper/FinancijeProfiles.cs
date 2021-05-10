@@ -41,11 +41,11 @@ namespace Financije.Presentation.AutoMapper
                 .ForMember(dest => dest.Payin, opt => opt.MapFrom(src => src.Payin.ToString("N2")))
                 .ForMember(dest => dest.Payout, opt => opt.MapFrom(src => src.Payout.ToString("N2")));
 
-            CreateMap<AccountItem, AccountItemModel>()
-                .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.Payout));
+            CreateMap<AccountItem, AccountItemModel>();
 
-            CreateMap<Core.Entities.AccountItem, AccountCreateModel>()
-                .ForMember(dest => dest.Article, opt => opt.MapFrom(src => src.Article.ArticleName));
+            CreateMap<AccountItem, AccountCreateModel>()
+                .ForMember(dest => dest.Article, opt => opt.MapFrom(src => src.Article.ArticleName))
+                .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Article.Description.DescriptionName));
 
         }
     }

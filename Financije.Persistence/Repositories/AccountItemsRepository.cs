@@ -48,17 +48,12 @@ namespace Financije.Persistence.Repositories
 
         public List<AccountItem> GetAll(int accountId)
         {
-            throw new NotImplementedException();
-        }
-
-        public List<AccountItem> GetByAccountId(int accountId)
-        {
             return _context.AccountItems.Where(i => i.AccountId == accountId).ToList();
         }
 
         public AccountItem GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.AccountItems.FirstOrDefault(i => i.Id == id);
         }
 
         public PagedRResult<AccountItem> GetPaginatedResult(PagedRQuery request, int id)
@@ -67,7 +62,7 @@ namespace Financije.Persistence.Repositories
 
             int recordsTotal = query.Count();
 
-            var data = query.Include(d => d.Article).ToList();
+            var data = query.Include(d => d.Article).Include(d => d.Article.Description).OrderBy(i => i.Id).ToList();
 
 
             return new PagedRResult<AccountItem>
@@ -79,12 +74,22 @@ namespace Financije.Persistence.Repositories
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            AccountItem accountItem = _context.AccountItems.SingleOrDefault(a => a.Id == id);
+            _context.AccountItems.Remove(accountItem);
+            _context.SaveChanges();
         }
 
-        public void RemoveByAccountId(int accountId)
+        public double SumById(int id)
         {
-            throw new NotImplementedException();
+            var sum = _context.AccountItems
+                .Where(i => i.AccountId == id)
+                .GroupBy(c => c.AccountId)
+                .Select(g => new
+                {
+                    SUM = g.Sum(s => s.Price)
+                });
+            
+            return sum.FirstOrDefault().SUM;
         }
     }
 }

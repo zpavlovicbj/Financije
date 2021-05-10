@@ -138,25 +138,53 @@ namespace Financije.Presentation.Controllers.Api
                 message = $"Not";
             }
             return Ok(message);
-
-
         }
 
 
         [HttpPost("GetAccountsItems")]
         public IActionResult GetAccountsItems([FromForm] PagedRQuery model, int Id)
         {
-            PagedRResult<AccountItemModel> result = _financijeService.SearchAccountItems(model, Id);
+            var result = _financijeService.SearchAccountItems(model, Id);
 
             var finalVM = new DatatableViewModel<AccountCreateModel>
             {
                 Data = _mapper.Map<List<AccountCreateModel>>(result.Items),
+                
                 Draw = model.Draw,
                 RecordsFiltered = result.Count,
                 RecordsTotal = result.Count
             };
 
             return Ok(finalVM);
+        }
+
+        /// <summary>
+        /// Briše stavku računa
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpPost("DeleteAccountItem")]
+        public IActionResult DeleteAccountItem(int Id)
+        {
+            var account = _financijeService.GetAccountItemById(Id);
+            string message;
+            if (account != null)
+            {
+                _financijeService.RemoveAccountItem(Id);
+                message = $"Deleted";
+            }
+            else
+            {
+                message = $"Not";
+            }
+            return Ok(message);
+        }
+
+        [HttpPost("TotalAccountItem")]
+        public IActionResult TotalAccountItem(int Id)
+        {
+            var total = _financijeService.TotalAccountItems(Id);
+            return Ok(total);
         }
 
         /// <summary>
@@ -258,16 +286,16 @@ namespace Financije.Presentation.Controllers.Api
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost("AddArticleItem")]
-        public IActionResult AddArticleItem([FromBody] Models.Financije.AccountItemModel model)
+        public IActionResult AddArticleItem([FromBody] AccountItemModel model)
         {
             Articles article = _financijeService.GetArticlesByName(model.Article);
             if (model.Id == 0)
             {
-                AccountItemModel item = new AccountItemModel
+                AccountItemRModel item = new AccountItemRModel
                 {
                     AccountId = model.AccountId,
                     ArticleId = article.ArticleId,
-                    Payout = model.Price
+                    Price = model.Price
                 };
                 _financijeService.AddAcountItem(item);
             }

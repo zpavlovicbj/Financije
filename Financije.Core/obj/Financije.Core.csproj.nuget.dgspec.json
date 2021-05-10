@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj": {}
+    "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj": {
+    "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj",
+        "projectUniqueName": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj",
         "projectName": "Financije.Core",
-        "projectPath": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj",
-        "packagesPath": "C:\\Users\\Zoki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zoki\\source\\repos\\Financije\\Financije.Core\\obj\\",
+        "projectPath": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Core\\Financije.Core.csproj",
+        "packagesPath": "D:\\Users\\zpavlovic1\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\zpavlovic1\\source\\repos\\Financije\\Financije.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Zoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "D:\\Users\\zpavlovic1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
