@@ -146,7 +146,7 @@ namespace Financije.Presentation.Controllers.Api
         [HttpPost("GetAccountsItems")]
         public IActionResult GetAccountsItems([FromForm] PagedRQuery model, int Id)
         {
-            PagedRResult<AccountItems> result = _financijeService.SearchAccountItems(model, Id);
+            PagedRResult<AccountItemModel> result = _financijeService.SearchAccountItems(model, Id);
 
             var finalVM = new DatatableViewModel<AccountCreateModel>
             {
@@ -258,12 +258,12 @@ namespace Financije.Presentation.Controllers.Api
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost("AddArticleItem")]
-        public IActionResult AddArticleItem([FromBody] AccountItemModel model)
+        public IActionResult AddArticleItem([FromBody] Models.Financije.AccountItemModel model)
         {
             Articles article = _financijeService.GetArticlesByName(model.Article);
             if (model.Id == 0)
             {
-                AccountItems item = new AccountItems
+                AccountItemModel item = new AccountItemModel
                 {
                     AccountId = model.AccountId,
                     ArticleId = article.ArticleId,

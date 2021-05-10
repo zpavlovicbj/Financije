@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Financije.Presentation.Models.Financije
 {
-    public class AccountCreateModel : AccountItemModel
+    public class AccountCreateModel 
     {
         public int Id { get; set; }
 

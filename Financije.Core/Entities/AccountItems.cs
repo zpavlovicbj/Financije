@@ -2,7 +2,7 @@
 
 namespace Financije.Core.Entities
 {
-    public class AccountItems
+    public class AccountItem
     {
         [Key]
         [Required]

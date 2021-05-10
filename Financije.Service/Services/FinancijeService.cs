@@ -41,7 +41,7 @@ namespace Financije.Service.Services
 
         }
 
-        public void AddAcountItem(AccountItems accountItems)
+        public void AddAcountItem(AccountItem accountItems)
         {
             _accountItemsRepository.Add(accountItems);
         }
@@ -261,12 +261,12 @@ namespace Financije.Service.Services
             return _accountRepository.GetLastId();
         }
 
-        public List<AccountItems> GetAccountItemsByAccountId(int accountId)
+        public List<AccountItem> GetAccountItemsByAccountId(int accountId)
         {
             return _accountItemsRepository.GetByAccountId(accountId);
         }
 
-        public PagedRResult<AccountItems> SearchAccountItems(PagedRQuery query, int id)
+        public PagedRResult<AccountItem> SearchAccountItems(PagedRQuery query, int id)
         {
             return _accountItemsRepository.GetPaginatedResult(query, id);
         }

@@ -13,7 +13,7 @@ namespace Financije.Core.Contracts.Services
 
         void AddAccountDetail(Accounts account);
 
-        void AddAcountItem(AccountItems accountItems);
+        void AddAcountItem(AccountItem accountItems);
 
         void AddArticles(string Name, int descriptionId);
 
@@ -46,7 +46,7 @@ namespace Financije.Core.Contracts.Services
 
         List<Accounts> GetAllAccounts();
 
-        List<AccountItems> GetAccountItemsByAccountId(int accountId); 
+        List<AccountItem> GetAccountItemsByAccountId(int accountId); 
 
         List<Articles> GetAllArticles();
 
@@ -75,7 +75,7 @@ namespace Financije.Core.Contracts.Services
 
         PagedRResult<Accounts> SearchAccounts(PagedRQuery query);
 
-        PagedRResult<AccountItems> SearchAccountItems(PagedRQuery query, int id);
+        PagedRResult<AccountItem> SearchAccountItems(PagedRQuery query, int id);
 
         PagedRResult<Articles> SearchArticles(PagedRQuery query);
 

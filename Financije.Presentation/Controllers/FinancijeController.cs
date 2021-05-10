@@ -193,7 +193,7 @@ namespace Financije.Presentation.Controllers
         [HttpGet]
         public IActionResult EnterAccount()
         {
-            return View(CreateAccountModel(21));
+            return View(CreateAccountModel(6));
         }
 
 

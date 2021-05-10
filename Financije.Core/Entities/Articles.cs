@@ -21,6 +21,6 @@ namespace Financije.Core.Entities
 
         public virtual Descriptions Description { get; set; }
 
-        public virtual List<AccountItems> AccountItems { get; set; }
+        public virtual List<AccountItem> AccountItems { get; set; }
     }
 }

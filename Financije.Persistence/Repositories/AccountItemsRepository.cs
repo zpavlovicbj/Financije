@@ -20,7 +20,7 @@ namespace Financije.Persistence.Repositories
             _context = context;
         }
 
-        public void Add(AccountItems name)
+        public void Add(AccountItem name)
         {
             _context.AccountItems.Add(name);
             _context.SaveChanges();
@@ -41,36 +41,36 @@ namespace Financije.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public List<AccountItems> GetAll()
+        public List<AccountItem> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public List<AccountItems> GetAll(int accountId)
+        public List<AccountItem> GetAll(int accountId)
         {
             throw new NotImplementedException();
         }
 
-        public List<AccountItems> GetByAccountId(int accountId)
+        public List<AccountItem> GetByAccountId(int accountId)
         {
             return _context.AccountItems.Where(i => i.AccountId == accountId).ToList();
         }
 
-        public AccountItems GetById(int id)
+        public AccountItem GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public PagedRResult<AccountItems> GetPaginatedResult(PagedRQuery request, int id)
+        public PagedRResult<AccountItem> GetPaginatedResult(PagedRQuery request, int id)
         {
-            IQueryable<AccountItems> query = _context.AccountItems.Where(i => i.AccountId == id);
+            IQueryable<AccountItem> query = _context.AccountItems.Where(i => i.AccountId == id);
 
             int recordsTotal = query.Count();
 
             var data = query.Include(d => d.Article).ToList();
 
 
-            return new PagedRResult<AccountItems>
+            return new PagedRResult<AccountItem>
             {
                 Count = recordsTotal,
                 Items = data

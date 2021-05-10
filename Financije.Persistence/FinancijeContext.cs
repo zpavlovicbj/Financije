@@ -76,6 +76,6 @@ namespace Financije.Persistence
 
         public DbSet<Accounts> Accounts { get; set; }
 
-        public DbSet<AccountItems> AccountItems { get; set; }
+        public DbSet<AccountItem> AccountItems { get; set; }
     }
 }

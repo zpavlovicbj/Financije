@@ -6,21 +6,21 @@ namespace Financije.Core.Contracts.Repositories
 {
     public interface IAccountItemsRepository
     {
-        List<AccountItems> GetAll();
+        List<AccountItem> GetAll();
 
-        List<AccountItems> GetAll(int accountId);
+        List<AccountItem> GetAll(int accountId);
 
-        PagedRResult<AccountItems> GetPaginatedResult(PagedRQuery request, int id);
+        PagedRResult<AccountItem> GetPaginatedResult(PagedRQuery request, int id);
 
-        AccountItems GetById(int id);
+        AccountItem GetById(int id);
 
-        List<AccountItems> GetByAccountId(int accountId);
+        List<AccountItem> GetByAccountId(int accountId);
 
         int Count();
 
         int Count(int accountId);
 
-        void Add(AccountItems name);
+        void Add(AccountItem name);
 
         void Edit();
 
